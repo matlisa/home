@@ -7428,7 +7428,7 @@ h1, h2, h3, h4, h5,
     font-size: 14px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
-    padding: 25 20px; }
+    padding: 0 20px; }
     #colorlib-aside .colorlib-footer span {
       display: block; }
     #colorlib-aside .colorlib-footer ul {
