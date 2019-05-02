@@ -7273,7 +7273,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   font-weight: 500;
-  color: #999999; }
+  color: #494949; }
   body.offcanvas {
     overflow-x: hidden; }
     body.offcanvas #colorlib-aside {
@@ -7428,7 +7428,7 @@ h1, h2, h3, h4, h5,
     font-size: 14px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
-    padding: 0 20px; }
+    padding: 25 20px; }
     #colorlib-aside .colorlib-footer span {
       display: block; }
     #colorlib-aside .colorlib-footer ul {
@@ -7590,15 +7590,15 @@ h1, h2, h3, h4, h5,
       border-radius: 50%; }
     .hero-wrap .text .subheading {
       font-size: 24px;
-      color: #bfbfbf;
+      color: #696969;
       font-weight: 300; }
     .hero-wrap .text h1 {
       letter-spacing: 1px;
       font-weight: 900; }
     .hero-wrap .text .btn-custom {
       font-weight: 400;
-      color: #b3b3b3;
-      border-bottom: 2px solid #b3b3b3; }
+      color: #494949;
+      border-bottom: 2px solid #494949; }
 
 .photography-entry {
   height: 270px;
