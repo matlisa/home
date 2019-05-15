@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
         <title>Social Learning Ecology Map</title>
- 
+
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-        <link rel="stylesheet" href="css/style.css?ver=4">
+        <link rel="stylesheet" href="css/style.css">
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
@@ -14,7 +14,7 @@
 
 <body>
     <div class="container-fluid col-sm-8">
-        <div class="row justify-content-md-center"> 
+        <div class="row justify-content-md-center">
             <h1 style="">Social Learning Ecology Map</h1>
             <div class="form-group">
               <div class="input-group mb-3">
@@ -23,7 +23,7 @@
                   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enter</button>
                 </div>
               </div>
-              <label for="exampleFormControlTextarea1">What is something I want to accomplish in the next year?</label>
+              <label for="exampleFormControlTextarea1">What is something I want to accomplish this summer related to the interest area I have chosen?</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
           </div>
         </div>
@@ -36,75 +36,16 @@
                     <div class="form-group row">
                         <label for="name-entry" class="col-sm-2 col-form-label">Person</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="name" placeholder="Name of individual to add to your map">
+                                <input type="text" class="form-control" id="name" placeholder="Name of individual to add to map">
                             </div>
                     </div>
                     <div><p>Select the support roles this person plays in the following support categories.</p></div>
                     <div style="margin-bottom: 20px;">
                         <div class="accordion" id="accordionExample">
                             <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Material Support</button>
-                                    </h2>
-                                    <!-- <span id="material" class="add-selected">TO PLACE SELECTION</span> -->
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="res1" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    <span data-trigger="hover"data-toggle="popover" title="They buy or lend out material resources to you" data-content="Freelyn's graphic design teacher gave her a computer mouse.">Buys/lends resources</span>
-                                                </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="res2" id="defaultCheck2">
-                                                <label class="form-check-label" for="defaultCheck2">
-                                                    <span data-trigger="hover" data-toggle="popover" title="They let you use material resources at the provider's location" data-content="Jon at StreetCode gave Krissy permission to come by and use the makery Saturday mornings.">Allows use of resources</span>   
-                                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Knowledge Building Support</button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="teach" id="defaultCheck2">
-                                                <label class="form-check-label" for="defaultCheck2">
-                                                    <span data-trigger="hover" data-toggle="popover" title="They teach you skills in your interest area" data-content="Teaching artists provided video editing instruction for Clarence.">Teaches</span>   
-                                                </label>
-                                        </div> 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="learn" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    <span data-trigger="hover"data-toggle="popover" title="They learn from you or give you a chance to teach others" data-content="Nisha taught her math tutor about the biology of snails.">Learns from</span>
-                                                </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="feed" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    <span data-trigger="hover"data-toggle="popover" title="They provide feedback on something you created" data-content="Izzy's coach tested and shared his thoughts on his app that tracks the trajectory of a throw.">Gives feedback</span>
-                                                </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="collab" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    <span data-trigger="hover"data-toggle="popover" title="They collaborate with you on a project" data-content="Jianfeng and his neighbor worked to build a garden for the community.">Collaborates</span>
-                                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Emotional Support</button>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#ff548d;">Emotional Support</button>
                                     </h2>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -112,9 +53,9 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="enc" id="defaultCheck2">
                                                 <label class="form-check-label" for="defaultCheck2">
-                                                    <span data-trigger="hover" data-toggle="popover" title="They provide you encouragement, generally and specifically, around your interests" data-content="Ken's best friend encourages him to identify what he's interested in and pursue it.">Encourages</span>   
+                                                    <span data-trigger="hover" data-toggle="popover" title="They provide you encouragement, generally and specifically, around your interests" data-content="Ken's best friend encourages him to identify what he's interested in and pursue it.">Encourages</span>
                                                 </label>
-                                        </div> 
+                                        </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="talk" id="defaultCheck1">
                                                 <label class="form-check-label" for="defaultCheck1">
@@ -137,9 +78,68 @@
                                 </div>
                             </div>
                             <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#4286f4;">Knowledge Building Support</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="teach" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    <span data-trigger="hover" data-toggle="popover" title="They teach you skills in your interest area" data-content="Teaching artists provided video editing instruction for Clarence.">Teaches</span>
+                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="learn" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    <span data-trigger="hover"data-toggle="popover" title="They learn from you or give you a chance to teach others" data-content="Nisha taught her math tutor about the biology of snails.">Learns from</span>
+                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="feed" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    <span data-trigger="hover"data-toggle="popover" title="They provide feedback on something you created" data-content="Izzy's coach tested and shared his thoughts on his app that tracks the trajectory of a throw.">Gives feedback</span>
+                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="collab" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    <span data-trigger="hover"data-toggle="popover" title="They collaborate with you on a project" data-content="Jianfeng and his neighbor worked to build a garden for the community.">Collaborates</span>
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#ffcd1c;">Material Support</button>
+                                    </h2>
+                                    <!-- <span id="material" class="add-selected">TO PLACE SELECTION</span> -->
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="res1" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    <span data-trigger="hover"data-toggle="popover" title="They buy or lend out material resources to you" data-content="Freelyn's graphic design teacher gave her a computer mouse.">Buys/lends resources</span>
+                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="res2" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    <span data-trigger="hover" data-toggle="popover" title="They let you use material resources at the provider's location" data-content="Jon at StreetCode gave Krissy permission to come by and use the makery Saturday mornings.">Allows use of resources</span>
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Brokering Support</button>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:#8d1cff;">Brokering Support</button>
                                     </h2>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -147,9 +147,9 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="brok1" id="defaultCheck2">
                                                 <label class="form-check-label" for="defaultCheck2">
-                                                    <span data-trigger="hover" data-toggle="popover" title="They seek out and share learning opportunities like programs, scolarships, speaking engagements, etc. related to your interest" data-content="Mercedes' physics teacher sends out email blasts about upcoming maker events and programs.">Brokers opportunity</span>   
+                                                    <span data-trigger="hover" data-toggle="popover" title="They seek out and share learning opportunities like programs, scolarships, speaking engagements, etc. related to your interest" data-content="Mercedes' physics teacher sends out email blasts about upcoming maker events and programs.">Brokers opportunity</span>
                                                 </label>
-                                        </div> 
+                                        </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="brok2" id="defaultCheck1">
                                                 <label class="form-check-label" for="defaultCheck1">
@@ -174,7 +174,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingFive">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Institutional Support</button>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:#28b783;">Institutional Support</button>
                                     </h2>
                                 </div>
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
@@ -182,9 +182,9 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="emp" id="defaultCheck2">
                                                 <label class="form-check-label" for="defaultCheck2">
-                                                    <span data-trigger="hover" data-toggle="popover" title="They give you a structured ot formalized way to engage in your interest" data-content="The local arts magazine hired Abu to write film reviews.">Employs</span>   
+                                                    <span data-trigger="hover" data-toggle="popover" title="They give you a structured ot formalized way to engage in your interest" data-content="The local arts magazine hired Abu to write film reviews.">Employs</span>
                                                 </label>
-                                        </div> 
+                                        </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="aff" id="defaultCheck1">
                                                 <label class="form-check-label" for="defaultCheck1">
@@ -214,9 +214,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <!-- <script  src="js/checkbox.js?ver=3"></script> -->
-<script src="js/network.js?ver=2"></script>
+<script src="js/network.js?ver=3"></script>
 
 <script type="text/javascript">
   $("[data-toggle=popover]").popover();

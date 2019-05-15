@@ -13,22 +13,23 @@ var a = {"id":1, "group": me, "name":"Me", "connections":1},
 	l = {"source": 0, "target": 1, "type": 1, "value": 10},
 	links = [];
 
-/* 
-1 - material
+/*
+3 - material
 2 - knowledge building
-3 - emotional
+1 - emotional
 4 - brokering
 5 - institutional
 */
-var support_type = {"res1": 1, "res2": 1, "teach": 2, "learn": 2, "feed": 2, "collab": 2, 
-"enc": 3, "talk": 3, "foll": 3, "recog": 3, "brok1": 4, "brok2": 4, "aca": 4, "car": 4,
+var support_type = {"res1": 3, "res2": 3, "teach": 2, "learn": 2, "feed": 2, "collab": 2,
+"enc": 1, "talk": 1, "foll": 1, "recog": 1, "brok1": 4, "brok2": 4, "aca": 4, "car": 4,
 "emp": 5, "aff": 5}
 
 var svg = d3.select("#network").append("svg")
 	.attr("width", width)
 	.attr("height", height)
 
-var color = d3.scaleOrdinal(d3.schemeCategory20);
+var color = d3.scaleOrdinal(["#ff548d", "#4286f4","#ffcd1c", "#8d1cff", "#28b783"]);
+var color2 = d3.scaleOrdinal(["#b2cfff", "#afced3"]);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().distance(100).strength(0.5))
@@ -42,7 +43,7 @@ var text;
 // d3.selectAll(".form-check-input").on("checked",function(d){
 // 	console.log("step0")
 // });
-      
+
 function setup() {
 
   link = svg.selectAll(".link")
@@ -56,7 +57,7 @@ function setup() {
     .enter().append("circle")
       .attr("class", "node")
       .attr("r", 10)
-      .attr("fill", function(d) { return color(d.group); })
+      .attr("fill", function(d) { return color2(d.group); })
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
@@ -72,7 +73,7 @@ function setup() {
 		    .attr("class", "label")
 		    .attr("dx", 12)
 		    .attr("dy", ".35em")
-			.attr("fill", function(d) { return color(d.group); })
+			.attr("fill", function(d) { return color2(d.group); })
 			.text(function(d) {
 		        return d.name;
 		    })
@@ -91,16 +92,16 @@ function setup() {
   }
 
   function tickActions() {
-    //update circle positions each tick of the simulation 
+    //update circle positions each tick of the simulation
     node
         .attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
-        
+
     text
     	.attr("x", function(d) { return d.x; })
         .attr("y", function(d) { return d.y; });
 
-    //update link positions 
+    //update link positions
     //simply tells one end of the line to follow one node around
     //and the other end of the line to follow the other node around
     link
@@ -108,7 +109,7 @@ function setup() {
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
-  } 
+  }
 
 }
 
@@ -130,14 +131,14 @@ function drawData(graph){
     node = node.data(nodes, function(d) { return d.id;});
     node.exit().remove();
     node = node.enter().append("circle")
-    	.attr("fill", function(d) { return color(d.group); })
+    	.attr("fill", function(d) { return color2(d.group); })
     	.attr("r", 10)
     	.call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended))
     	.merge(node);
- 	
+
    	text = text
 	    .data(nodes, function(d) { return d.id;})
 
@@ -145,7 +146,7 @@ function drawData(graph){
     text = text.enter().append("text")
 		    .attr("dx", 12)
 		    .attr("dy", ".35em")
-			.attr("fill", function(d) { return color(d.group); })
+			.attr("fill", function(d) { return color2(d.group); })
 			.text(function(d) {
 		        return d.name;
 		    })
@@ -256,7 +257,7 @@ $(function(){
   	  name = $('#username').val();
   	  console.log($('#yourmap').text())
       var text = $('#yourmap');
-      text.text(name+"'s Map");    
+      text.text(name+"'s Map");
   });
 
   $("#downloaddata").click(download);
@@ -270,6 +271,3 @@ function download() {
 	dlAnchorElem.setAttribute("download", name+".json");
 	dlAnchorElem.click();
 }
-
-
-
