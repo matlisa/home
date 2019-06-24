@@ -2,14 +2,15 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-        <title>Social Learning Ecology Map</title>
+    <title>Social Learning Ecology Map</title>
 
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-        <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
 
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
 </head>
 
 <body>
@@ -28,7 +29,6 @@
           </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
@@ -216,11 +216,40 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <!-- <script  src="js/checkbox.js?ver=3"></script> -->
-<script src="js/network.js?ver=3"></script>
+<script src="js/network.js"></script>
+<script src="js/signup.js"></script>
 
 <script type="text/javascript">
   $("[data-toggle=popover]").popover();
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<!-- <script src="/__/firebase/6.2.0/firebase-app.js"></script>
+<script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+<script src="/__/firebase/init.js"></script> -->
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBU_YFZasGdFzg1KXB3gtdu2DNV8u3zlCg",
+    authDomain: "octans-learning.firebaseapp.com",
+    databaseURL: "https://octans-learning.firebaseio.com",
+    projectId: "octans-learning",
+    storageBucket: "",
+    messagingSenderId: "513759146680",
+    appId: "1:513759146680:web:a04beec969d2bfa4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script> -->
 
 </body>
 </html>
