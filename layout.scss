@@ -1,0 +1,257 @@
+// Constants
+$material-lessons-drawer-width: 320px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900i&display=swap');
+
+body {
+  display: flex; // Removes top gap between modal drawer and viewport
+  height: 100vh; // Ensures that permanent drawer extends to bottom of viewport
+  margin: 0; // Removes top gap between top app bar and viewport
+}
+
+// Material Lessons side navigation drawer
+
+.material-lessons-drawer {
+  @include mdc-drawer-width($material-lessons-drawer-width);
+
+  .mdc-drawer__header {
+    padding-top: 16px;
+  }
+
+  .mdc-drawer__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+
+    svg {
+      vertical-align: -3px;
+      margin-right: 4px;
+    }
+    
+     .mdc-chip {
+      @include mdc-chip-height(24px);
+      left: 4px;
+      bottom: 4px;
+      font-style: normal;
+      @include mdc-typography(caption);
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      @include mdc-chip-fill-color(#ECE0FD);
+      @include mdc-chip-ink-color(#6200EE);
+      pointer-events: none;
+        
+    }
+    
+  }
+  
+  .theme-name {
+    margin-bottom: 0px;
+
+    &:focus {
+      outline: 1px solid rgba(0, 0, 0, .12);
+    }
+
+    &:empty:before {
+      content: attr(placeholder);
+      color: rgba(0, 0, 0, .6);
+    }
+  }
+  
+  .glitch-url {
+    @include mdc-theme-prop(color, $mdc-theme-primary);
+    margin-top: 0;
+    font-size: 0.65rem;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+  
+  
+  .mdc-list-group__subheader {
+    @include mdc-typography(overline);
+  }
+
+  .mdc-list-item--disabled {
+    @include mdc-list-item-graphic-ink-color(rgba(0, 0, 0, .12));
+    cursor: auto;
+    
+    .mdc-list-item__text {
+      color: rgba(0, 0, 0, .12);
+    }
+    
+    
+  }
+  
+  .mdc-list-item__text {
+    color: rgba(0, 0, 0, .6);
+    font-weight: 400;
+  }
+  .footer-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 8px;
+}
+  .footer-mdc-button {
+  color: $mdc-theme-on-surface;
+
+}
+  
+  .nav-footer {
+    position: fixed;
+    bottom: 0;
+    width: 319px;
+    height: 64px;
+    background-color: $mdc-theme-surface;
+  }
+  
+  
+  
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.mdc-drawer-app-content {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+// About Material Lessons page
+
+.about-page {
+  color: $material-color-grey-800;
+  padding: 28px;
+  max-width: 600px;
+  visibility: visible;
+
+  
+  h2 {
+    @include mdc-typography(headline4);
+    font-weight: 400;
+
+    .material-icons {
+      vertical-align: -5px;
+      font-size: 2rem;
+      margin-right: 8px;
+    }
+  }
+
+  h3 {
+    color: rgba(0, 0, 0, .6);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    line-height: 12px;
+  }
+  
+  h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    @include mdc-typography(body1);
+    margin-top: 12px;
+    margin-bottom: 28px;
+    line-height: 24px;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .12);
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .mdc-list-divider {
+    margin: 32px 0;
+  }
+
+  .mdc-button {
+    @include mdc-button-outline-color(rgba(0, 0, 0, 0.12));
+    @include mdc-button-outline-width(1px);
+  }
+
+  .subsystem-live-proto {
+    img {
+      width: 60px;
+      margin-bottom: 8px;
+      border: none;
+    }
+
+    .live-proto-main {
+      // Center and vertical align icon + text
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      // Background scrim
+      border-radius: 8px;
+      background: rgba(112, 24, 238, 0.12);
+      height: calc(100% - 2px);
+      margin-top: 2px;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      color: #6200ee;
+      margin: 0;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.indent {
+text-indent: 35px;
+margin-top: none;
+margin-bottom: none;
+}
+
+
+// Responsive design styling ~~~
+
+// BREAKPOINT max-width:1450px
+
+@media (max-width: 1450px) {
+  .material-lessons-drawer {
+    height: 100%;
+  }
+
+  .subsystem-live-proto {
+    left: 720px;
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+  .subsystem-live-proto {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 20px;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .subsystem-live-proto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}

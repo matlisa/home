@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material 101</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy.png?v=1560558181797">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- Add favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  </head>
+  <body class="mdc-typography language-css">
+    <aside class="mdc-drawer material-lessons-drawer">
+      <div class="mdc-drawer__content">
+        <div class="mdc-drawer__header">
+          <h1 class="mdc-drawer__title mdc-typography--headline5">
+            <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path d="M23.8461538,12 C23.8461538,5.46307692 18.5369231,0.153846154 12,0.153846154 C5.46307692,0.153846154 0.153846154,5.46307692
+                0.153846154,12 C0.153846154,18.5369231 5.46307692,23.8461538 12,23.8461538 C18.5369231,23.8461538 23.8461538,18.5369231 23.8461538,12
+                Z M4.46153846,18.0738462 C3.11538462,16.4153846 2.30769231,14.3046154 2.30769231,12 C2.30769231,9.70615385 3.12615385,7.60615385
+                4.46153846,5.93692308 L4.46153846,18.0738462 Z M18.0738462,4.46153846 L5.92615385,4.46153846 C7.58461538,3.11538462 9.69538462,2.30769231
+                12,2.30769231 C14.3046154,2.30769231 16.4153846,3.11538462 18.0738462,4.46153846 Z M12,14.7246154 L7.95076923,6.61538462 L16.06,6.61538462
+                L12,14.7246154 Z M17.3846154,8.76923077 L17.3846154,17.3846154 L13.0769231,17.3846154 L17.3846154,8.76923077 Z M10.9230769,17.3846154
+                L6.61538462,17.3846154 L6.61538462,8.76923077 L10.9230769,17.3846154 Z M18.0738462,19.5384615 C16.4046154,20.8846154 14.2938462,21.6923077
+                12,21.6923077 C9.70615385,21.6923077 7.58461538,20.8846154 5.92615385,19.5384615 L18.0738462,19.5384615 Z M21.6923077,12 C21.6923077,14.3046154
+                20.8846154,16.4153846 19.5384615,18.0738462 L19.5384615,5.93692308 C20.8738462,7.60615385 21.6923077,9.70615385 21.6923077,12 Z" id="mdc-logo-path"></path>
+              </defs>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-29.000000, -48.000000)">
+                  <g>
+                    <g transform="translate(0.000000, 44.000000)">
+                      <g transform="translate(29.000000, 0.000000)">
+                        <g transform="translate(0.000000, 4.000000)">
+                          <mask fill="white">
+                            <use xlink:href="#mdc-logo-path"></use>
+                          </mask>
+                          <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Material 101
+            <div class="android-chip mdc-chip mdc-chip-set--choice">
+      <div class="mdc-chip__text">WEB</div>
+    </div>
+          </h1>
+          <h2 class="theme-name mdc-typography--headline5" placeholder="Theme name..."></h2>
+        </div>
+        <hr class="mdc-list-divider">
+
+        <nav class="mdc-list">
+          <a href="/" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">favorite</i>
+            <span class="mdc-list-item__text">Building with Material</span>
+          </a>
+          <hr class="mdc-list-divider">
+
+        <h3 class="mdc-list-group__subheader">Activities</h3> 
+          <a href="color.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+            <span class="mdc-list-item__text">Color</span>
+          </a>
+          <a href="typography.html" class="mdc-list-item mdc-list-item--selected" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+            <span class="mdc-list-item__text">Typography</span>
+          </a>
+          <a href="shape.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+            <span class="mdc-list-item__text">Shape</span>
+          </a>
+          <a href="layout.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">view_column</i>
+            <span class="mdc-list-item__text">Layout</span>
+          </a>
+
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Resources</h3>
+          <a href="portfolio-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Design Portfolio Template</span>
+          </a>
+          <a href="login-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Login Screen Template</span>
+          </a>
+          <a href="media-article.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Article Template</span>
+          </a>
+          <a href="components-sheet.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">category</i>
+            <span class="mdc-list-item__text">Components</span>
+          </a>
+          <div class= "nav-footer">
+            <hr class="mdc-list-divider">
+             <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="https://material-101-android.glitch.me/" target="_blank">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+              <span class="mdc-button__label">MATERIAL 101 FOR ANDROID</span>
+            </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="material-lessons-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+
+        <!-- Type Scale -->
+
+        <section class="typography-page subsystem-page">
+          <section class="subsystem-overview subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-overview">
+                <i class="material-icons">text_fields</i>
+                Typography
+              </h2>
+              <ul class="subsystem-block-description">
+                <li>A type scale is a hierarchy of type styles.</li>
+                <li>The Material Design type scale can be customized for different needs.</li>
+                <li>Font pairings can help readers understand what they're reading.</li>
+              </ul>
+              <figure class="typography-figure">
+                <figure class="typography-figure-line mdc-typography--headline1">Headline 1</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--headline2">Headline 2</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--headline3">Headline 3</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--headline4">Headline 4</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--headline5">Headline 5</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--headline6">Headline 6</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--subtitle1">Subtitle 1</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--subtitle2">Subtitle 2</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--body1">Body 1</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--body2">Body 2</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--button">Button</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--caption">Caption</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+                <figure class="typography-figure-line mdc-typography--overline">Overline</figure>
+                <hr class="mdc-list-divider typography-baseline-divider">
+              </figure>
+            </div>
+          </section>
+
+          <section class="subsystem-live-proto">
+            <aside class="mdc-drawer live-proto-material-lessons-drawer mdc-drawer--modal">
+              <div class="mdc-drawer__content">
+                 <nav class="mdc-list">
+                  <a href="index.html" class="mdc-list-item" aria-selected="true" role="option" tabindex="0">
+                    <i class="material-icons mdc-list-item__graphic">favorite</i>
+                    <span class="mdc-list-item__text">About</span>
+                  </a>
+                  <a href="layout.html" class="mdc-list-item">
+                    <i class="material-icons mdc-list-item__graphic">view_column</i>
+                    <span class="mdc-list-item__text">Layout</span>
+                  </a>
+                  <a href="color.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+                    <span class="mdc-list-item__text">Color</span>
+                  </a>
+                  <a href="typography.html" class="mdc-list-item mdc-list-item--selected" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+                    <span class="mdc-list-item__text">Typography</span>
+                  </a>
+                  <a href="shape.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+                    <span class="mdc-list-item__text">Shape</span>
+                  </a>
+                   <a href="portfolio-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Design Portfolio Template</span>
+                  </a>
+                  <a href="login-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Login Template</span>
+                  </a>
+                  <a href="media-article.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Article Template</span>
+                  </a>
+                </nav>
+              </div>
+            </aside>
+            <div class="mdc-drawer-scrim"></div>
+
+
+            <header class="mdc-top-app-bar live-proto-top-app-bar">
+              <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                  <span class="mdc-top-app-bar__title">Typography</span>
+                </section>
+              </div>
+            </header>
+
+            <section class="live-proto-main">
+              <p class="mdc-typography--overline live-type-proto-overline">Overline</p>
+              <p class="mdc-typography--headline4 live-type-proto-headline4">Headline 4</p>
+              <p class="mdc-typography--caption live-type-proto-caption">Caption</p>
+              <p class="mdc-typography--body2 live-type-proto-body2"> This paragraph is using the Body 2 style. However, this was anything but a regular bee: in fact it was an elephant.</p>
+              <p class="mdc-typography--subtitle2 live-type-proto-subtitle2">Subtitle 2</p>
+              <p class="mdc-typography--body1 live-type-proto-body1">
+                This paragraph is using the Body 1 style. She caught the shawl as she spoke, and looked about for the owner: in another moment the White Queen came running wildly through the wood, with both arms stretched out wide, as if she were flying.
+              </p>
+              <button class="mdc-fab mdc-fab--extended">
+                Button
+              </button>
+            </section>
+          </section>
+          
+          <section class="subsystem-activity subsystem-page-block ">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-activity-heading">
+                <i class="material-icons">code</i>
+                Typography activity
+              </h2>
+              <p class="subsystem-activity-description">
+                Learn how to generate a typescale by adding a font from Google Fonts,
+                then customize specific type styles, like the Body 1 type style.
+              </p>
+
+              <h3 class="subsystem-activity-instruction">A. Add a Google Font to your Material Theme</h3>
+              <p>
+                Change your Material Typography using standard sizes and weights at each point on the scale.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Choose a font from Google Fonts
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Browse Google Fonts to find a font that expresses your brand or app’s function.
+                  When you have found one that seems appropriate, use the red
+                  <i class="material-icons">add_circle_outline</i>
+                  button to add it to the collection drawer.
+                </p>
+                <div class="button-wrapper">
+                  <a class="mdc-button mdc-button--outlined" href="https://fonts.google.com/" target="_blank">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                    <span class="mdc-button__label">Visit Google Fonts</span>
+                  </a>
+                </div>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p>
+                    Choosing a font can be hard, especially with all of these choices available on Google Fonts.
+                    When in doubt, go simple, and try different styles. Read more about choosing fonts on 
+                    <a href="https://design.google/library/choosing-web-fonts-beginners-guide/" target="_blank">Google Design</a>.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Add the 300, 400 and 500 weights of your selected font
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  The Material Typography scale uses a range of weights for different styles: 300, 400 and 500.
+                  To see if your font you selected has these weights, click on the <em>CUSTOMIZE</em> button. If these weights are available for your font, check <em>300, 400</em> and <em>500</em>.
+                  <p>If your font doesn't have these weights available, skip this step.</p>
+                </p>
+                <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fcustomize-font.gif?1559160621800">
+              </div>
+              
+               <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Import the font into your Material Theme SCSS file
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Once you add a font to your collection, and customized the selected weights, Google Fonts will display the URL in the <em>EMBED</em> tab.
+                  Click on the <em>@IMPORT</em> button, then copy & paste the <em>@import</em> statement to the top of your 
+                  project's <code>my-theme.scss</code> file. Use the code snippet below as a guide.
+                </p>
+                <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fimport-font.gif?1558384597442">
+                <pre><code>@import url('https://fonts.googleapis.com/css?family=Roboto'); // Select your own font</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Apply the font to your components
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Now that you have imported the font into your project, set that font to be the value of the 
+                  <code>$mdc-typography-font-family</code> variable in the <code>my-theme.scss</code> file.
+                  Make sure to wrap the font name is in <code>unquote()</code> so it is compatible with all components.
+                  Note that it's fine to include spaces if the name of your font has more than one word!
+                </p>
+                <pre><code>$mdc-typography-font-family: unquote('Roboto'); // Use your own value </code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part A Complete
+                  </h5>
+                  <p>
+                    Check out the templates to see see how the font you chose scales across various components.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+              
+              <h3 class="subsystem-activity-instruction">B. Customize specific type styles with mixins</h3>
+              <p>
+                In this step you will customize three type styles: Headline 4, Body, and Overline.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Customize the Headline 4 style
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Headlines are the largest text on the screen, reserved for short, important text or numerals. 
+                  Let's set the <em>Headline 4</em> style to be bold and italic.
+                  Copy and paste the following code snippet into your <code>my-theme.scss</code> file under the Typography Activity section.
+                </p>
+                <pre><code>$mdc-typography-styles-headline4: (
+<!--            -->  font-weight: 800,
+<!--            -->  font-style: italic
+<!--            -->);</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Customize the Body 1 style
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Body text is styled using <em>Body 1</em> or <em>Body 2</em>.
+                  It’s used for long-form writing and small text sizes.
+                  Let's increase the size of <em>Body 1</em> text.
+                  Copy and paste the following code snippet into your <code>my-theme.scss</code> file.
+                </p>
+                <pre><code>$mdc-typography-styles-body1: (
+<!--            -->  font-size: 20px
+<!--            -->);</code></pre>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p>Learn more about text styling with CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">here</a>.</p>
+                </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Customize the Overline style
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  <em>Caption</em> and <em>Overline</em> text are the smallest font sizes.
+                  They are used sparingly to annotate imagery or to introduce a headline.
+                  Let's draw more attention to overline text by setting it to use the Secondary color. 
+                  Copy and paste the following code snippet into your <code>my-theme.scss</code> file.
+                </p>
+                <pre><code>$mdc-typography-styles-overline: (
+<!--              -->  color: $mdc-theme-secondary
+<!--              -->);</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part B Complete
+                  </h5>
+                  <p>
+                    Check out the templates to see see how your typography styles are applied across various components.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+
+              <h3 class="subsystem-activity-instruction">C. Add another font using Google Font pairings</h3>
+              <p>
+                Material Theming makes it easy to use an additional font in your project’s typography scale.
+                We'll use a Google Fonts pairing to choose a supplemental font and apply it to your project’s body text. 
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Find a pairing for your font by going to its specimen page <div class="indent">on Google Fonts</div>
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  A font’s specimen page includes a list of pairings curated by Google Fonts. 
+                  Choose one you enjoy and add it to your collection using the red 
+                  <i class="material-icons">add_circle_outline</i>
+                  button.
+                </p>
+                <div class="button-wrapper">
+                    <a class="mdc-button mdc-button--outlined" href="https://fonts.google.com/" target="_blank">
+                      <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                      <span class="mdc-button__label">Visit Google Fonts</span>
+                    </a>
+                  </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Import the font into your Material Theme SCSS file
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Similar to Part A, click on the <em>@IMPORT</em> button, then copy & paste the <em>@import</em>
+                  statement to the top of your project's <code>my-theme.scss</code> file, right under the
+                  <em>@import</em> statement for your first font.
+                </p>
+                <pre><code>@import url('https://fonts.googleapis.com/css?family=Montserrat'); // Select your own font</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Customize the Body 1 style to use the new font
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Material Theming makes it easy to customize one specific level of your type scale with mixins.
+                  Similar to Part B, we can customize the <em>Body 1</em> style to use the new font.
+                  Copy the following code snippet to replace the <code>$mdc-typography-styles-body1</code> you entered in the <code>my-theme.scss</code> file in Part B.
+                </p>
+                <pre><code>$mdc-typography-styles-body1: (
+<!--            -->  font-family: unquote('Montserrat'), // Use your own value
+<!--            -->  font-size: 16px,
+<!--            -->);</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part C Complete
+                  </h5>
+                  <p>
+                    Check out the templates to see see how the typography changes you've made are applied across the various components.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="subsystem-presets subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-presets">
+                <svg class="mdc-logo" width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-29.000000, -48.000000)">
+                      <g>
+                        <g transform="translate(0.000000, 44.000000)">
+                          <g transform="translate(29.000000, 0.000000)">
+                            <g transform="translate(0.000000, 4.000000)">
+                              <mask fill="white">
+                                <use xlink:href="#mdc-logo-path"></use>
+                              </mask>
+                              <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Material Templates + Typography
+              </h2>
+              <p class="subsystem-block-description">
+                The beauty of Material Theming is its ability to achieve vastly different visual results just by changing a few lines of code.
+                Using the templates in the navigation menu, complete the challenges below to learn advanced techniques in customizing Material Components.
+              </p>
+
+             
+              <div class="subsystem-preset">
+                <h3 class="preset-heading">Create hierarchy using typography in the article template</h3>
+           
+         
+                <div class="preset-body">   
+                  <p> <em class="preset-point">
+                    1. Change the first paragraph's type style
+                    </em><br>     
+                    In the Typography Activity, you were given specific typograhy styles to customize. The challenge is to use a different typography style to emphasize the first paragraph of the article template. To do this, you will need to change a CSS class in an HTML file. Use the table of CSS classes for typography <a title="here" target="_blank" href="https://material.io/develop/web/components/typography/">here</a>
+ as a guide.
+                  <br>
+                    <br>
+                    <em class="preset-point">
+                    2. Customize the new type style
+                    </em><br>     
+                    By default, the new type style will appear as Roboto in the style's respective size in the first paragraph. The challenge is to bring more emphasis to the first paragraph by customizing the type style's color and the typeface it uses. The code snippets below use the Headline 5 style as an example, but use them as a guide to explore. Make sure your color choices pass contrast requirements.
+                  </p>
+                  <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FScreen%20Shot%202019-06-24%20at%203.58.25%20PM.png?v=1561417124735"/>
+                </div>  
+                  <em>media-article.html - Line 166</em>
+                  <pre><code>&lt;p class="mdc-typography--headline5"&gt;She very soon came to an open field, with a wood on the other side of it: it looked much darker than the last wood, and Alice felt a little timid about going into it. However, on second thoughts, she made up her mind to go on.&lt;/p&gt;</code></pre>
+                <em>Add to my-theme.scss</em>
+                  <pre><code>@import url('https://fonts.googleapis.com/css?family=Exo:300,400,500,700&display=swap');
+<!--              -->                  
+<!--              -->$mdc-typography-styles-headline5: (
+<!--              -->font-family: unquote("Exo"),
+<!--              -->font-weight: 700,
+<!--              -->color: #6200ee,
+<!--              -->);</code></pre>
+              </div>
+              </div>   
+        
+          </section>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Import the pre-compiled JavaScript for Material components -->
+    <script src="components.dll.js"></script>
+    <!-- Import the bundled JavaScript from app.js -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>
+
+
+<!--               <div class="subsystem-preset">
+                <h3 class="preset-heading">Editorial-friendly font</h3>
+            
+                <div class="preset-body">
+                  <p>
+                    Fortnightly is a news app that covers a variety of topics.
+                    One of its fonts is Libre Franklin, a sans serif typeface inspired by Franklin Gothic.
+                    This font is easily scannable, and its various weights help establish the app's typographic hierarchy.
+                  </p>
+                  <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1NgGKa0YRuOJpsxvDauLqhNLr1_TnF2m2%2F01-stickersheet-logo-fortnightly.png" />
+                </div>
+                <pre><code>@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500'); -->
+<!--           $mdc-typography-font-family: unquote('Libre Franklin');</code></pre> -->
+<!--               </div> -->
+
+<!--               <div class="subsystem-preset"> -->
+<!--                 <h3 class="preset-heading">Quirky, character-filled font</h3> -->
+              
+<!--                 <div class="preset-body"> -->
+<!--                   <p> -->
+<!--                     Basil is a recipe app allowing users to browse recipes curated by a group of chefs and bartenders. -->
+<!--                     Basil uses the font Montserrat as a display typeface, as well as for body, caption, and button text. -->
+<!--                     Montserrat is a sans serif font with wide letterforms.  -->
+<!--                   </p> -->
+<!--                   <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F12WcnQceK_XdiYVO_0IOeeKzGpwelBSZT%2Fcasestudies-basil-main.png" /> -->
+<!--                 </div> -->
+<!--                 <pre><code>@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500'); -->
+<!--           $mdc-typography-font-family: unquote('Montserrat');</code></pre> -->
+<!--               </div>  -->

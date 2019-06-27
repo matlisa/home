@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material 101</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy.png?v=1560558181797">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- Add favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  </head>
+  <body class="mdc-typography language-css">
+    <aside class="mdc-drawer material-lessons-drawer">
+      <div class="mdc-drawer__content">
+        <div class="mdc-drawer__header">
+          <h1 class="mdc-drawer__title mdc-typography--headline5">
+            <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path d="M23.8461538,12 C23.8461538,5.46307692 18.5369231,0.153846154 12,0.153846154 C5.46307692,0.153846154 0.153846154,5.46307692
+                0.153846154,12 C0.153846154,18.5369231 5.46307692,23.8461538 12,23.8461538 C18.5369231,23.8461538 23.8461538,18.5369231 23.8461538,12
+                Z M4.46153846,18.0738462 C3.11538462,16.4153846 2.30769231,14.3046154 2.30769231,12 C2.30769231,9.70615385 3.12615385,7.60615385
+                4.46153846,5.93692308 L4.46153846,18.0738462 Z M18.0738462,4.46153846 L5.92615385,4.46153846 C7.58461538,3.11538462 9.69538462,2.30769231
+                12,2.30769231 C14.3046154,2.30769231 16.4153846,3.11538462 18.0738462,4.46153846 Z M12,14.7246154 L7.95076923,6.61538462 L16.06,6.61538462
+                L12,14.7246154 Z M17.3846154,8.76923077 L17.3846154,17.3846154 L13.0769231,17.3846154 L17.3846154,8.76923077 Z M10.9230769,17.3846154
+                L6.61538462,17.3846154 L6.61538462,8.76923077 L10.9230769,17.3846154 Z M18.0738462,19.5384615 C16.4046154,20.8846154 14.2938462,21.6923077
+                12,21.6923077 C9.70615385,21.6923077 7.58461538,20.8846154 5.92615385,19.5384615 L18.0738462,19.5384615 Z M21.6923077,12 C21.6923077,14.3046154
+                20.8846154,16.4153846 19.5384615,18.0738462 L19.5384615,5.93692308 C20.8738462,7.60615385 21.6923077,9.70615385 21.6923077,12 Z" id="mdc-logo-path"></path>
+              </defs>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-29.000000, -48.000000)">
+                  <g>
+                    <g transform="translate(0.000000, 44.000000)">
+                      <g transform="translate(29.000000, 0.000000)">
+                        <g transform="translate(0.000000, 4.000000)">
+                          <mask fill="white">
+                            <use xlink:href="#mdc-logo-path"></use>
+                          </mask>
+                          <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Material 101
+            <div class="android-chip mdc-chip mdc-chip-set--choice">
+      <div class="mdc-chip__text">WEB</div>
+    </div>
+          </h1>
+          <h2 class="theme-name mdc-typography--headline5" placeholder="Theme name..."></h2>
+        </div>
+        <hr class="mdc-list-divider">
+
+        <nav class="mdc-list">
+          <a href="/" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">favorite</i>
+            <span class="mdc-list-item__text">Building with Material</span>
+          </a>
+          <hr class="mdc-list-divider">
+
+         <h3 class="mdc-list-group__subheader">Activities</h3> 
+          <a href="color.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+            <span class="mdc-list-item__text">Color</span>
+          </a>
+          <a href="typography.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+            <span class="mdc-list-item__text">Typography</span>
+          </a>
+          <a href="shape.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+            <span class="mdc-list-item__text">Shape</span>
+          </a>
+          <a href="layout.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">view_column</i>
+            <span class="mdc-list-item__text">Layout</span>
+          </a>
+
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Resources</h3>
+          <a href="portfolio-template.html" class="mdc-list-item mdc-list-item--selected" aria-selected="true" role="option" tabindex="0">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Design Portfolio Template</span>
+          </a>
+          <a href="login-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Login Screen Template</span>
+          </a>
+          <a href="media-article.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Article Template</span>
+          </a>
+          <a href="components-sheet.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">category</i>
+            <span class="mdc-list-item__text">Components</span>
+          </a>
+          <div class= "nav-footer">
+            <hr class="mdc-list-divider">
+             <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="https://material-101-android.glitch.me/" target="_blank">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+              <span class="mdc-button__label">MATERIAL 101 FOR ANDROID</span>
+            </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="material-lessons-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+        
+        <section class="portfolio-template">
+          <header class="portfolio-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-has-action-item" style="top: 0px;">
+            <div class="mdc-top-app-bar__row">
+              <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title">My Portfolio</span>
+              </section>
+              <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                <ul class="navList">
+                  <li class="navListItem"><button class="navListLink mdc-button portfolio-work-button">Work</button></li>
+                  <li class="navListItem"><button class="navListLink mdc-button portfolio-about-button">About</button></li>
+                  <li class="navListItem"><button class="navListLink mdc-button portfolio-contact-button">Contact</button></li>
+                </ul>
+              </section>
+            </div>
+          </header>
+
+          <section class="portfolio-work">
+            <h1 class="mdc-typography--headline2 centered">Work</h1>
+            <ul class="cardList">
+              <li class="mdc-card card">
+                <a class="mdc-card__primary-action" tabindex="0">
+                  <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers3.jpg?1558559904507" alt="">
+                  <div class="cardContent">
+                    <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+                    <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+                    <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mdc-card card">
+                <a class="mdc-card__primary-action" tabindex="0">
+                  <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers5.jpg?1558558462565" alt="">
+                  <div class="cardContent">
+                    <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+                    <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+                    <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mdc-card card">
+                <a class="mdc-card__primary-action" tabindex="0">
+                  <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers4.jpg?1558558462683" alt="">
+                  <div class="cardContent">
+                    <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+                    <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+                    <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mdc-card card">
+                <a class="mdc-card__primary-action" tabindex="0">
+                  <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers7.jpg?1558558462200" alt="">
+                  <div class="cardContent">
+                    <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+                    <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+                    <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="portfolio-about">
+            <h1 class="mdc-typography--headline2 centered">About Me</h1>
+            <div class="aboutMe">
+              <figure class="selfPortrait">
+                <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fbarcelona1.jpg?1558558467346" alt="">
+              </figure>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, pariatur autem deserunt numquam dignissimos amet fuga cumque possimus maiores quaerat, alias rem, commodi esse culpa molestiae ut aspernatur. Odio?
+              Magnam asperiores impedit fuga<br><br>
+              Repudiandae sunt quaerat, similique minus, velit est laborum fugit nostrum non vel temporibus incidunt ab natus nisi. Ad necessitatibus, nulla reiciendis veniam dolore sapiente alias error?<br><br>
+              Tempora aperiam nobis asperiores consequatur cumque, sed nisi perferendis laudantium a odit excepturi quo distinctio incidunt molestiae, dicta quia saepe laborum perspiciatis odio alias aspernatur quis. Quam corrupti error recusandae. Dicta cupiditate, pariatur autem deserunt numquam dignissimos amet fuga cumque possimus maiores quaerat, alias rem.</p>
+            </div>
+          </section>
+
+          <section class="portfolio-contact contactPage">
+            <h1 class="mdc-typography--headline2 centered">Contact Me</h1>
+            <p class="contactText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, pariatur autem deserunt numquam dignissimos amet fuga cumque possimus maiores quaerat, alias rem, commodi esse culpa molestiae ut aspernatur.</p>
+            <form class="contactForm">
+              <div class="mdc-text-field mdc-text-field--name">
+                <input type="text" id="my-name-field" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-name-field">Name</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+              <div class="mdc-text-field mdc-text-field--email">
+                <input type="text" id="my-email-field" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-email-field">Email</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+              <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--message">
+                <div class="mdc-text-field-character-counter">0 / 500</div>
+                <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" maxlength="500"></textarea>
+                <div class="mdc-notched-outline">
+                  <div class="mdc-notched-outline__leading"></div>
+                  <div class="mdc-notched-outline__notch">
+                    <label for="textarea" class="mdc-floating-label">Textarea Label</label>
+                  </div>
+                  <div class="mdc-notched-outline__trailing"></div>
+                </div>
+              </div>
+              <button class="mdc-button mdc-button--raised submitButton">
+                <span class="mdc-button__label">Submit</span>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+              </button>
+            </form>
+          </section>
+
+          <section class="portfolio-project contentMax">
+            <h1 class="mdc-typography--headline4">Flowers in Amsterdam</h1>
+            <p class="mdc-typography--overline">Photography</p>
+            <p class="mdc-typography--body1">Now, take a good look at me! I’m one that has spoken to a King, I am: mayhap you’ll never see such another: and to show you I’m not proud, you may shake hands with me!’ And he grinned almost from ear to ear, as he leant forwards (and as nearly as possible fell off the wall in doing so) and offered Alice his hand. She watched him a little anxiously as she took it.</p>
+            <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers3.jpg?1558559904507" alt="">
+            <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers5.jpg?1558558462565" alt="">
+            <p class="mdc-typography--caption">But the beard seemed to melt away as she touched it, and she found herself sitting quietly under a tree—while the Gnat (for that was the insect she had been talking to) was balancing itself on a twig just over her head, and fanning her with its wings.</p>
+            <img src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers8.jpg?1558558471249" alt="">
+            <p class="mdc-typography--headline5">
+              However, this was anything but a regular bee: in fact it was an elephant—as Alice soon found out, though the idea quite took her breath away at first.
+            </p>
+            <ul class="mdc-image-list mdc-image-list--masonry masonry-image-list imageList">
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers8.jpg?1558558471249" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers2.png?1558558462723" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers1.jpg?1558558462399" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers7.jpg?1558558462200" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers4.jpg?1558558462683" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers6.png?1558558462701" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers9.jpg?1558558480051" alt="Text label">
+              </li>
+              <li class="mdc-image-list__item"><img class="mdc-image-list__image"
+                src="https://cdn.glitch.com/31357884-a11a-4a7b-9fe5-0322583e8062%2Fflowers3.jpg?1558559904507" alt="Text label">
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Import the pre-compiled JavaScript for Material components -->
+    <script src="components.dll.js"></script>
+    <!-- Import the bundled JavaScript from app.js -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>

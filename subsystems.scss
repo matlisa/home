@@ -1,0 +1,745 @@
+// Styling for subsystem pages ~~~
+
+.subsystem-page-block {
+  padding: 20px 32px 32px;
+}
+
+.subsystem-block-content {
+  max-width: 640px;
+
+  img {
+    width: 100%;
+  }
+  
+  .diagram-footer {
+    width: 100%;
+    margin-top: -6px;
+  }
+}
+
+.subsystem-block-heading {
+  @include mdc-typography(headline4);
+  margin-top: 24px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  color: $material-color-grey-800;
+
+
+  .material-icons {
+    vertical-align: -8px;
+    font-size: 2.4rem;
+    margin-right: 8px;
+  }
+
+  .mdc-logo {
+    vertical-align: -4px;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+  }
+}
+
+.subsystem-block-description {
+  @include mdc-typography(body1);
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 8px;
+  margin-bottom: 20px;
+  
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+// Subsystem live prototype styling
+
+.subsystem-live-proto {
+  @include mdc-elevation(8);
+  width: 339.5px; // Based on dimensions of phone image
+  height: 599px; // Based on dimensions of phone image
+  border-radius: 16px 16px 12px 12px;
+  overflow: hidden;
+
+  // Phone image background
+  background-image: url('https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fphone.png?1558131315083');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 28px 4px 4px 4px; // Based on dimensions of phone image
+
+  // Fixed positioning
+  position: fixed;
+  top: 60px;
+  left: 1050px;
+
+  .mdc-top-app-bar {
+    position: relative;
+  }
+  
+  // Hide top app bar menu icon in desktop mode
+  .mdc-top-app-bar__navigation-icon {
+    display: none;
+  }
+  
+  
+  &.shape-live-proto {
+    .mdc-top-app-bar__navigation-icon {
+      display: block;
+    }
+  }
+
+  .live-proto-main {
+    height: 535px; // Based on dimensions of phone image
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  // Color - live proto
+  .color-live-proto-main {
+    background: $mdc-theme-background;
+    border-radius: 0px 0px 11px 11px;
+  }
+  
+  .mdc-card {
+    width: 100%;
+    color: $mdc-theme-on-surface;
+  
+    .demo-card__primary {
+      padding: 1rem;
+    }
+  
+    .demo-card__title,
+    .demo-card__subtitle {
+      margin: 0;
+    }
+  
+    .demo-card__secondary {
+      padding: 0 1rem 8px;
+      opacity: 0.87;
+    }
+
+    .mdc-card__actions {
+      justify-content: flex-end;
+    }
+  }
+  .mdc-fab {
+    float: right;
+    margin-top: 24px;
+  }
+
+  // Typography - live proto
+  .mdc-fab {
+    float: right;
+  }
+  
+  .live-type-proto-overline {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+  
+  .live-type-proto-headline4 {
+      margin-top: -4px;
+      margin-bottom: 8px;
+    }
+  
+  .live-type-proto-caption {
+      margin-top: 0px;
+      margin-bottom: 16px;
+      opacity: 0.64;
+    }
+
+  .live-type-proto-body2 {
+      margin-top: 2px;
+      margin-bottom: 32px;
+    }
+
+  .live-type-proto-subtitle2 {
+      margin-top: 16px;
+      margin-bottom: 12px;
+      opacity: 0.64;
+    }
+  
+  .live-type-proto-body1 {
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+
+  .mdc-drawer.mdc-drawer--modal {
+    position: absolute;
+    top: 0;
+  }
+  .mdc-drawer-scrim {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.about-page .subsystem-live-proto {
+  .mdc-top-app-bar {
+    display: none;
+  }
+}
+
+// Mobile screen live prototype
+
+@media screen and (max-width: 640px) {
+  
+  .subsystem-overview  {
+    display: none;
+  }
+  
+  .subsystem-live-proto {
+    position: absolute;
+    visibility: visible;
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%; // Based on dimensions of phone image
+    height: 100vh; // Based on dimensions of phone image
+    border-radius: 0px;
+    overflow: hidden;
+    background-image: none;
+    background-size: none;
+    background-repeat: none;
+   // Based on dimensions of phone image
+
+    .live-proto-main {
+      height: 100vh; // Based on dimensions of phone image
+      box-sizing: border-box;
+      padding: 10px;
+      overflow-y: none;
+
+      border-radius: 0px;
+      margin-top: 0px;
+    }
+    
+    .material-lessons-drawer {
+      display: none;
+    }
+    
+    .mdc-top-app-bar__navigation-icon {
+      display: block;
+    }
+  }
+  
+  .material-lessons-top-app-bar {
+    display: none;
+  }
+  
+  .template-top-app-bar {
+    display: block;
+  }
+  
+  .subsystem-overview {
+    display: none;
+  }
+  
+  .subsystem-activity {
+    display: none;
+  }
+  
+  .subsystem-presets {
+    display: none;
+  }
+  
+  .subsystem-live-proto .mdc-fab {
+    float: unset;
+    margin-top: unset;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .about-page.about-page {
+    > * {
+      display: none;
+    }
+    
+    .subsystem-live-proto {
+      display: block;
+      
+      .live-proto-main.live-proto-main {
+        border-radius: 0;
+        margin-top: 0;
+      }
+      
+      .mdc-top-app-bar {
+        display: block;
+        
+        .mdc-top-app-bar__title {
+          position: absolute;
+          text-align: center;
+          padding: 0;
+          width: calc(100% - 8px);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  
+}
+
+// Subsystem activity styling
+
+.subsystem-activity {
+  background: #251F2D;
+  color: rgba(255, 255, 255, 0.87);
+  
+  .subsystem-activity-heading {
+    @include mdc-typography(headline4);
+    font-family: 'Roboto Mono';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.87);
+
+    .material-icons {
+      vertical-align: -12px;
+      font-size: 3rem;
+      margin-right: 0px;
+    }
+  }
+  
+  .subsystem-activity-description {
+    @include mdc-typography(body1);
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .title-indent {
+  text-indent: 44px;
+  margin-top: none;
+  margin-bottom: none;
+  }
+    
+  .subsystem-activity-instruction {
+    @include mdc-typography(headline5);
+    font-family: 'Roboto Mono';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.87);
+  }
+  
+  .subsystem-activity-subinstruction {
+    @include mdc-typography(body1);
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    margin-top: 36px;
+    margin-bottom: 4px;
+    letter-spacing: -0.1px;
+    color: rgba(214,168,247, 1.0);
+    // background: rgba(0,0,0,0.24);
+//     outline-offset: 12px;
+//     box-shadow: 0 0 1px white;
+//     // border: 1px solid rgba(255,255,255,0.32);
+//     border-radius: 14px;
+ 
+
+
+
+    .number {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: rgba(214,168,247,0.90);
+      color: #012140;
+      border-radius: 50%;
+      text-align: center;
+      @include mdc-typography(body1);
+      font-size: 17.5px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      font-style: italic;
+      padding-top: 1px;
+      
+    }
+  }
+
+  .subsystem-activity-task {
+    margin-left: 32px;
+  }
+
+  .mdc-button {
+    @include mdc-states(rgba(255, 255, 255, 0.87));
+    @include mdc-button-ink-color(rgba(255, 255, 255, 0.87));
+    @include mdc-button-outline-color(rgba(255, 255, 255, 0.87));
+    @include mdc-button-outline-width(1px);
+  }
+
+  a {
+    color: #dee2e6;
+
+    &:hover {
+      color: white;
+    }
+  }
+  
+  p {
+    @include mdc-typography(body1);
+    margin-top: 12px;
+    margin-bottom: 28px;
+    line-height: 26px;
+
+    .material-icons {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      vertical-align: -2px;
+    }
+  }
+
+  .mdc-list-divider {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    margin: 48px 0 48px -32px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+.callout-block {
+  color: #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  
+  .callout-block-heading {
+    @include mdc-typography(body2);
+    font-family: 'Roboto Mono';
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 4px 0;
+  }
+  
+  p {
+    @include mdc-typography(body2);
+    margin: 0;
+    line-height: 24px;
+  }
+
+  &.design-tip {
+    background: #664614;
+  }
+
+  &.part-completion {
+    background: #188038;
+
+    .callout-block-heading {
+      display: flex;
+      justify-content: center;
+
+      .material-icons {
+        vertical-align: -6px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  pre.language-css + &, & + & {
+    margin-top: 30px;
+  }
+}
+
+// Subsystem presets styling
+
+.subsystem-preset {
+  width: 100%;
+  margin: 48px 0 72px;
+  color: rgba(0, 0, 0, 0.87);
+  
+  em {
+      @include mdc-typography(overline);
+      text-decoration: none;
+      font-style: normal;
+      font-family: 'Roboto Mono';
+      
+    }
+
+  .preset-heading {
+    @include mdc-typography(headline5);
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    
+  }
+
+  .preset-subheading {
+    @include mdc-typography(headline5);
+    color: rgba(0, 0, 0, 0.6);
+    margin: 4px 0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  
+
+  .preset-body {
+    display: flex;
+    margin: 16px 0;
+
+    p {
+      @include mdc-typography(body1);
+      margin: 0 16px 0 0;
+    }
+    
+    .preset-point {
+    @include mdc-typography(subtitle1);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+    img {
+      object-fit: cover;
+      width: 300px;
+      height: 223px;
+      border: 1px solid #D7D7D7;
+    }
+  }
+}
+
+// Styling for all "figures" in subsystem overview sections ~~~
+
+// Color figure
+
+.color-figure {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.color-square {
+  width: 250px;
+  height: 200px;
+  border: 1px solid #b4b4b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 8px;
+  font-weight: 500;
+
+  .color-square-desc--bg, .color-square-desc--text {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+  }
+}
+
+.color-square--primary {
+  background: $mdc-theme-primary;
+  color: $mdc-theme-on-primary;
+
+  .color-square-desc--text {
+    background: $mdc-theme-on-primary;
+    color: $mdc-theme-primary;
+  }
+}
+.color-square--secondary {
+  background: $mdc-theme-secondary;
+  color: $mdc-theme-on-secondary;
+
+  .color-square-desc--text {
+    background: $mdc-theme-on-secondary;
+    color: $mdc-theme-secondary;
+  }
+}
+.color-square--surface {
+  background: $mdc-theme-surface;
+  color: $mdc-theme-on-surface;
+  border: none;
+  @include mdc-shape-radius($mdc-shape-medium-component-radius);
+
+  .color-square-desc--text {
+    background: $mdc-theme-on-surface;
+    color: $mdc-theme-surface;
+  }
+}
+.color-square--background {
+  background: $mdc-theme-background;
+}
+.color-square--error {
+  background: $mdc-theme-error;
+  color: $mdc-theme-on-error;
+
+  .color-square-desc--text {
+    background: $mdc-theme-on-error;
+    color: $mdc-theme-error;
+  }
+}
+
+// Typography figure
+
+.typography-figure {
+  width: 580px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-left: 4px;
+}
+
+.typography-figure-line {
+  margin: 0;
+  margin-left: 24px;
+  
+  // Position typography baselines
+  &.mdc-typography--headline1 {
+    $line-height: 6rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+  &.mdc-typography--headline2 {
+    $line-height: 3.75rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+  &.mdc-typography--headline3 {
+    $line-height: 3.125rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+  &.mdc-typography--headline4 {
+    $line-height: 2.5rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+  &.mdc-typography--headline5 {
+    $line-height: 2rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+  &.mdc-typography--headline6,
+  &.mdc-typography--subtitle1,
+  &.mdc-typography--subtitle2,
+  &.mdc-typography--body1,
+  &.mdc-typography--body2,
+  &.mdc-typography--caption,
+  &.mdc-typography--button,
+  &.mdc-typography--overline {
+    $line-height: 2rem;
+    @include mdc-typography-baseline-top($line-height);
+    @include mdc-typography-baseline-bottom($line-height);
+  }
+}
+  
+.mdc-list-divider.typography-baseline-divider {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+// Shape figure
+
+.shape-figure {
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.01);
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+
+  td {
+    border: 1px solid #dadce0;
+    padding: 24px;
+    
+    &:nth-child(2) {
+      vertical-align: top;
+    }
+  }
+
+  .shape-component {
+    @include mdc-elevation(4);
+    @include mdc-typography(headline6);
+    background: white;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+  }
+
+  .shape-component--small {
+    width: 96px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: $mdc-shape-small-component-radius;
+  }
+
+  .shape-component--medium {
+    width: 168px;
+    height: 115px;
+    line-height: 115px;
+    border-radius: $mdc-shape-medium-component-radius;
+  }
+
+  .shape-component--large {
+    width: 168px;
+    height: 226px;
+    line-height: 226px;
+    border-radius: $mdc-shape-large-component-radius;
+  }
+
+  ul {
+    @include mdc-typography(body2);
+    columns: 2;
+  }
+}
+
+// Grey tonal palette figure
+
+.grey-tonal-palette {
+  margin-left: 32px;
+  margin-right: 0;
+}
+
+.grey-tone {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.grey-50 {
+  background: $material-color-grey-50;
+}
+.grey-100 {
+  background: $material-color-grey-100;
+}
+.grey-200 {
+  background: $material-color-grey-200;
+}
+.grey-300 {
+  background: $material-color-grey-300;
+}
+.grey-400 {
+  background: $material-color-grey-400;
+}
+.grey-500 {
+  background: $material-color-grey-500;
+}
+.grey-600 {
+  background: $material-color-grey-600;
+}
+.grey-700 {
+  background: $material-color-grey-700;
+}
+.grey-800 {
+  background: $material-color-grey-800;
+}
+.grey-900 {
+  background: $material-color-grey-900;
+}
+
+.grey-600,
+.grey-700,
+.grey-800,
+.grey-900 {
+  color: rgba(255, 255, 255, 0.87);
+}

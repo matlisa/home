@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material 101</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy.png?v=1560558181797">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- Add favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  </head>
+  <body class="mdc-typography language-css">
+    <aside class="mdc-drawer material-lessons-drawer">
+      <div class="mdc-drawer__content">
+        <div class="mdc-drawer__header">
+          <h1 class="mdc-drawer__title mdc-typography--headline5">
+            <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path d="M23.8461538,12 C23.8461538,5.46307692 18.5369231,0.153846154 12,0.153846154 C5.46307692,0.153846154 0.153846154,5.46307692
+                0.153846154,12 C0.153846154,18.5369231 5.46307692,23.8461538 12,23.8461538 C18.5369231,23.8461538 23.8461538,18.5369231 23.8461538,12
+                Z M4.46153846,18.0738462 C3.11538462,16.4153846 2.30769231,14.3046154 2.30769231,12 C2.30769231,9.70615385 3.12615385,7.60615385
+                4.46153846,5.93692308 L4.46153846,18.0738462 Z M18.0738462,4.46153846 L5.92615385,4.46153846 C7.58461538,3.11538462 9.69538462,2.30769231
+                12,2.30769231 C14.3046154,2.30769231 16.4153846,3.11538462 18.0738462,4.46153846 Z M12,14.7246154 L7.95076923,6.61538462 L16.06,6.61538462
+                L12,14.7246154 Z M17.3846154,8.76923077 L17.3846154,17.3846154 L13.0769231,17.3846154 L17.3846154,8.76923077 Z M10.9230769,17.3846154
+                L6.61538462,17.3846154 L6.61538462,8.76923077 L10.9230769,17.3846154 Z M18.0738462,19.5384615 C16.4046154,20.8846154 14.2938462,21.6923077
+                12,21.6923077 C9.70615385,21.6923077 7.58461538,20.8846154 5.92615385,19.5384615 L18.0738462,19.5384615 Z M21.6923077,12 C21.6923077,14.3046154
+                20.8846154,16.4153846 19.5384615,18.0738462 L19.5384615,5.93692308 C20.8738462,7.60615385 21.6923077,9.70615385 21.6923077,12 Z" id="mdc-logo-path"></path>
+              </defs>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-29.000000, -48.000000)">
+                  <g>
+                    <g transform="translate(0.000000, 44.000000)">
+                      <g transform="translate(29.000000, 0.000000)">
+                        <g transform="translate(0.000000, 4.000000)">
+                          <mask fill="white">
+                            <use xlink:href="#mdc-logo-path"></use>
+                          </mask>
+                          <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Material 101
+            <div class="android-chip mdc-chip mdc-chip-set--choice">
+      <div class="mdc-chip__text">WEB</div>
+    </div>
+          </h1>
+          <h2 class="theme-name mdc-typography--headline5" placeholder="Theme name..."></h2>
+        </div>
+        <hr class="mdc-list-divider">
+
+        <nav class="mdc-list">
+          <a href="/" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">favorite</i>
+            <span class="mdc-list-item__text">Building with Material</span>
+          </a>
+          <hr class="mdc-list-divider">
+
+           <h3 class="mdc-list-group__subheader">Activities</h3> 
+          <a href="color.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+            <span class="mdc-list-item__text">Color</span>
+          </a>
+          <a href="typography.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+            <span class="mdc-list-item__text">Typography</span>
+          </a>
+          <a href="shape.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+            <span class="mdc-list-item__text">Shape</span>
+          </a>
+          <a href="layout.html" class="mdc-list-item mdc-list-item--selected" role="option">
+            <i class="material-icons mdc-list-item__graphic">view_column</i>
+            <span class="mdc-list-item__text">Layout</span>
+          </a>
+
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Resources</h3>
+          <a href="portfolio-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Design Portfolio Template</span>
+          </a>
+          <a href="login-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Login Screen Template</span>
+          </a>
+          <a href="media-article.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Article Template</span>
+          </a>
+          <a href="components-sheet.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">category</i>
+            <span class="mdc-list-item__text">Components</span>
+          </a>
+          <div class= "nav-footer">
+            <hr class="mdc-list-divider">
+             <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="https://material-101-android.glitch.me/" target="_blank">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+              <span class="mdc-button__label">MATERIAL 101 FOR ANDROID</span>
+            </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="material-lessons-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+
+        <!-- Layout -->
+        <section class="layout-page subsystem-page">
+          <section class="subsystem-overview subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-overview">
+                <i class="material-icons">view_column</i>
+                Layout
+              </h2>
+              <ul class="subsystem-block-description">
+                <li>Material Design uses a column layout grid with 8dp increments.</li>
+                <li>Components are positioned using either a fixed width or fluid width.</li>
+                <li>Breakpoints and user inputs can change the appearance and behavior of components.</li>
+              </ul>
+              <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FGroup%2032.png?1558651306104">
+              <img class="diagram-footer" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Flayout-image-footer.png?1559072174220">
+            </div>
+          </section>
+
+          <section class="subsystem-live-proto">
+            <aside class="mdc-drawer live-proto-material-lessons-drawer mdc-drawer--modal">
+              <div class="mdc-drawer__content">
+               <nav class="mdc-list">
+                  <a href="index.html" class="mdc-list-item" aria-selected="true" role="option" tabindex="0">
+                    <i class="material-icons mdc-list-item__graphic">favorite</i>
+                    <span class="mdc-list-item__text">About</span>
+                  </a>
+                  <a href="layout.html" class="mdc-list-item mdc-list-item--selected">
+                    <i class="material-icons mdc-list-item__graphic">view_column</i>
+                    <span class="mdc-list-item__text">Layout</span>
+                  </a>
+                  <a href="color.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+                    <span class="mdc-list-item__text">Color</span>
+                  </a>
+                  <a href="typography.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+                    <span class="mdc-list-item__text">Typography</span>
+                  </a>
+                  <a href="shape.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+                    <span class="mdc-list-item__text">Shape</span>
+                  </a>
+                   <a href="portfolio-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Design Portfolio Template</span>
+                  </a>
+                  <a href="login-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Login Template</span>
+                  </a>
+                  <a href="media-article.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Media Template</span>
+                  </a>
+                </nav>
+              </div>
+            </aside>
+            <div class="mdc-drawer-scrim"></div>
+
+
+            <header class="mdc-top-app-bar live-proto-top-app-bar">
+              <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                  <span class="mdc-top-app-bar__title">Layout</span>
+                </section>
+              </div>
+            </header>
+
+            <section class="live-proto-main">
+              <ul class="mdc-image-list">
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-bangkok-aree-by-maxcaravitis-145566757%20(1).png?1558387647132">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-nieuwmarkt-en-lastage-by-katerina-145690655.jpg?1559083734977">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-ijplein-en-vogelbuurt-by-michael-overbeck-145033507.jpg?1558391289775">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-slotervaart-by-thomas-van-galen-146974241.png?1558387648914">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-nieuwmarkt-en-lastage-by-katerina-145690661.jpg?1558387646115">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2F144344753.jpg?1559083680866">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-bos-lommer-by-michaeloverbeck-144011939.jpg?1558387648710">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-boston-back-bay-by-copyrightsloth-144349925.jpg?1558387645931">
+                </li>
+                <li class="mdc-image-list__item">
+                  <img class="mdc-image-list__image" src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-bos-lommer-by-michaeloverbeck-144011483.jpg?1558387647309">
+                </li>
+              </ul>
+            </section>
+          </section>
+          
+          <section class="subsystem-activity subsystem-page-block ">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-activity-heading">
+                <i class="material-icons">code</i>
+                Layout activity
+              </h2>
+              <p class="subsystem-activity-description">
+                Learn how to customize the image list component
+                by changing the type of list, the number of columns, and the gutter space of the list. 
+              </p>
+
+              <h3 class="subsystem-activity-instruction">A. Customize the number of columns</h3>
+              <p>
+                Using SASS mixins, you can easily manipulate the number of vertical columns in an image list component.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Use the image list mixin to change the number of columns <div class="indent">from 1 to 2</div>
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  In the <code>my-components.scss</code> file, find the selector for the <code>.mdc-image-list</code> class.
+                  Update the number of columns in the <code>mdc-image-list-masonry-columns</code> mixin from 1 to 2.
+                  You can also copy the code snippet below.
+                </p>
+                <pre><code>.mdc-image-list {
+<!--            -->  @include mdc-image-list-standard-columns(2);
+<!--            -->}</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part A Complete
+                  </h5>
+                  <p>
+                    Check your mobile view to see how your image list now has 2 columns. There will be gaps
+                    and strange spacing, but we are going to fix this in Part B.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+              
+              <h3 class="subsystem-activity-instruction">B. Create a masonry-style layout</h3>
+              <p>
+                Using SASS mixins and CSS classes, you can manipulate an image list to allow the use of
+                dynamically sized container heights that reflect the aspect ratio of each image, rather
+                than creating large gaps in the layout. This requires two steps: one within your 
+                <code>my-components.scss</code> file and one in your <code>public/layout.html</code> file.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Update the image list mixin from ‘standard’ to ‘masonry’
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Update the list’s mixin to use ‘masonry’ instead of ‘standard’.
+                  Copy the snippet below and then paste it to replace the mixin in <code>my-components.scss</code>.
+                </p>
+                <pre><code>.mdc-image-list {
+<!--            -->  @include mdc-image-list-masonry-columns(2);
+<!--            -->}</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Add the masonry image list class to your HTML
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  To achieve a masonry list, you need to include an additional class in your image list's <code>&lt;ul&gt;</code> HTML element.
+                  Copy the code below and replace line 199 of your <code>public/layout.html</code> file.
+                </p>
+                <pre><code>&lt;ul class="mdc-image-list mdc-image-list--masonry"&gt;</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part B Complete
+                  </h5>
+                  <p>
+                    Refresh your browser and check the live prototype to see how your image list now is
+                    using masonry-style spacing. The gaps and holes from Part A should now be removed.
+                    The gutter space between images might be a bit large, but we'll fix that in Step C.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+
+              <h3 class="subsystem-activity-instruction">C. Adjust the gutter size of your image list</h3>
+              <p>
+                Using the same SASS mixin from Part B, you can manipulate an image list’s gutters
+                to allow for more or less space between each image. This only requires a single step!
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Add a gutter size mixin to the image list
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  To change the gutter size of an image list, add an additional value to the image list mixin in <code>my-components.scss</code>.
+                  This second parameter represents the gutter size.
+                  Copy the code snippet below, and replace the current mixin.
+                </p>
+                <pre><code>.mdc-image-list {
+<!--            -->  @include mdc-image-list-masonry-columns(2, 4px);
+<!--            -->}</code></pre>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p>
+                    Adjust the gutter size as you see fit. Smaller gutter sizes are more distinct and utilitarian,
+                    while larger gutters give more focus to the images. 
+                  </p>
+                </div>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part C Complete
+                  </h5>
+                  <p>
+                    Check your live prototype to see how your image list is now using masonry-style spacing and custom gutter sizes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Import the pre-compiled JavaScript for Material components -->
+    <script src="components.dll.js"></script>
+    <!-- Import the bundled JavaScript from app.js -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>

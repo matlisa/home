@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material 101</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy.png?v=1560558181797">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- Add favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  </head>
+  <body class="mdc-typography language-css">
+    <aside class="mdc-drawer material-lessons-drawer">
+      <div class="mdc-drawer__content">
+        <div class="mdc-drawer__header">
+          <h1 class="mdc-drawer__title mdc-typography--headline5">
+            <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path d="M23.8461538,12 C23.8461538,5.46307692 18.5369231,0.153846154 12,0.153846154 C5.46307692,0.153846154 0.153846154,5.46307692
+                0.153846154,12 C0.153846154,18.5369231 5.46307692,23.8461538 12,23.8461538 C18.5369231,23.8461538 23.8461538,18.5369231 23.8461538,12
+                Z M4.46153846,18.0738462 C3.11538462,16.4153846 2.30769231,14.3046154 2.30769231,12 C2.30769231,9.70615385 3.12615385,7.60615385
+                4.46153846,5.93692308 L4.46153846,18.0738462 Z M18.0738462,4.46153846 L5.92615385,4.46153846 C7.58461538,3.11538462 9.69538462,2.30769231
+                12,2.30769231 C14.3046154,2.30769231 16.4153846,3.11538462 18.0738462,4.46153846 Z M12,14.7246154 L7.95076923,6.61538462 L16.06,6.61538462
+                L12,14.7246154 Z M17.3846154,8.76923077 L17.3846154,17.3846154 L13.0769231,17.3846154 L17.3846154,8.76923077 Z M10.9230769,17.3846154
+                L6.61538462,17.3846154 L6.61538462,8.76923077 L10.9230769,17.3846154 Z M18.0738462,19.5384615 C16.4046154,20.8846154 14.2938462,21.6923077
+                12,21.6923077 C9.70615385,21.6923077 7.58461538,20.8846154 5.92615385,19.5384615 L18.0738462,19.5384615 Z M21.6923077,12 C21.6923077,14.3046154
+                20.8846154,16.4153846 19.5384615,18.0738462 L19.5384615,5.93692308 C20.8738462,7.60615385 21.6923077,9.70615385 21.6923077,12 Z" id="mdc-logo-path"></path>
+              </defs>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-29.000000, -48.000000)">
+                  <g>
+                    <g transform="translate(0.000000, 44.000000)">
+                      <g transform="translate(29.000000, 0.000000)">
+                        <g transform="translate(0.000000, 4.000000)">
+                          <mask fill="white">
+                            <use xlink:href="#mdc-logo-path"></use>
+                          </mask>
+                          <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Material 101
+            <div class="android-chip mdc-chip mdc-chip-set--choice">
+      <div class="mdc-chip__text">WEB</div>
+    </div>
+          </h1>
+          <h2 class="theme-name mdc-typography--headline5" placeholder="Theme name..."></h2>
+        </div>
+        <hr class="mdc-list-divider">
+
+        <nav class="mdc-list">
+          <a href="/" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">favorite</i>
+            <span class="mdc-list-item__text">Building with Material</span>
+          </a>
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Activities</h3> 
+          <a href="color.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+            <span class="mdc-list-item__text">Color</span>
+          </a>
+          <a href="typography.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+            <span class="mdc-list-item__text">Typography</span>
+          </a>
+          <a href="shape.html" class="mdc-list-item mdc-list-item--selected" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+            <span class="mdc-list-item__text">Shape</span>
+          </a>
+          <a href="layout.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">view_column</i>
+            <span class="mdc-list-item__text">Layout</span>
+          </a>
+
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Resources</h3>
+          <a href="portfolio-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Design Portfolio Template</span>
+          </a>
+          <a href="login-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Login Screen Template</span>
+          </a>
+          <a href="media-article.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Article Template</span>
+          </a>
+          <a href="components-sheet.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">category</i>
+            <span class="mdc-list-item__text">Components</span>
+          </a>
+          <div class= "nav-footer">
+            <hr class="mdc-list-divider">
+             <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="https://material-101-android.glitch.me/" target="_blank">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+              <span class="mdc-button__label">MATERIAL 101 FOR ANDROID</span>
+            </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="material-lessons-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+
+        <!-- Shape System -->
+        
+        <section class="shape-page subsystem-page">
+          <section class="color-page subsystem-page">
+            <section class="subsystem-overview subsystem-page-block">
+              <div class="subsystem-block-content">
+                <h2 class="subsystem-block-heading" name="subsystem-overview">
+                  <i class="material-icons">border_style</i>
+                  Shape
+                </h2>
+                <ul class="subsystem-block-description">
+                  <li>Shape can create visual hierarchy among components.</li>
+                  <li>Shape can express brand and imply interactivity.</li>
+                  <li>Shape families unify related shapes across all components.</li>
+                </ul>
+                <table class="shape-figure">
+                  <col span="1" style="width: 40%;">
+                  <tr>
+                    <td><div class="shape-component shape-component--small mdc-typography--headline6">Small</div></td>
+                    <td>
+                      <span class="mdc-typography--overline">Small Components</span>
+                      <ul>
+                        <li>Button</li>
+                        <li>Chips</li>
+                        <li>Floating action button</li>
+                        <li>Text field</li>
+                        <li>Snackbar</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="shape-component shape-component--medium">Medium</div></td>
+                    <td>
+                      <span class="mdc-typography--overline">Medium Components</span>
+                      <ul>
+                        <li>Card</li>
+                        <li>Dialog</li>
+                        <li>Image list item</li>
+                        <li>Menu</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="shape-component shape-component--large">Large</div></td>
+                    <td>
+                      <span class="mdc-typography--overline">Large Components</span>
+                      <ul>
+                        <li>Drawer</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+
+            <section class="subsystem-live-proto shape-live-proto">
+              <div class="shape-live-proto-content">
+            <aside class="mdc-drawer live-proto-material-lessons-drawer mdc-drawer--modal">
+              <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                  <a href="index.html" class="mdc-list-item" aria-selected="true" role="option" tabindex="0">
+                    <i class="material-icons mdc-list-item__graphic">favorite</i>
+                    <span class="mdc-list-item__text">About</span>
+                  </a>
+                  <a href="layout.html" class="mdc-list-item">
+                    <i class="material-icons mdc-list-item__graphic">view_column</i>
+                    <span class="mdc-list-item__text">Layout</span>
+                  </a>
+                  <a href="color.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+                    <span class="mdc-list-item__text">Color</span>
+                  </a>
+                  <a href="typography.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+                    <span class="mdc-list-item__text">Typography</span>
+                  </a>
+                  <a href="shape.html" class="mdc-list-item mdc-list-item--selected" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+                    <span class="mdc-list-item__text">Shape</span>
+                  </a>
+                   <a href="portfolio-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Design Portfolio Template</span>
+                  </a>
+                  <a href="login-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Login Template</span>
+                  </a>
+                  <a href="media-article.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Article Template</span>
+                  </a>
+                </nav>
+              </div>
+            </aside>
+            <div class="mdc-drawer-scrim"></div>
+
+
+            <header class="mdc-top-app-bar live-proto-top-app-bar">
+              <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                  <span class="mdc-top-app-bar__title">Shape</span>
+                </section>
+              </div>
+            </header>
+    
+                <div class="mdc-drawer-scrim"></div>
+                <section class="live-proto-main">
+                  <div class="mdc-card demo-card">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                      <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-nieuwmarkt-en-lastage-by-katerina-145690655.jpg?1559083734977&quot;);"></div>
+                      <div class="demo-card__primary">
+                          <h3 class="demo-card__subtitle mdc-typography mdc-typography--overline">Overline</h3>
+                        <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Headline 6</h2>
+                      </div>
+                      <div class="demo-card__secondary mdc-typography mdc-typography--body2">This paragraph is using the Body 2 style. However, this was anything but a regular bee: in fact it was an elephant.</div>
+                    </div>
+                    <div class="mdc-card__actions">
+                      <div class="mdc-card__action-buttons">
+                        <button class="mdc-button mdc-card__action mdc-card__action--button">Button</button>
+                        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mdc-fab" aria-label="Favorite">
+                    <span class="mdc-fab__icon material-icons">favorite</span>
+                  </button>
+                </section>
+              </div>
+            </section>
+            
+            <section class="subsystem-activity subsystem-page-block">
+              <div class="subsystem-block-content">
+                <h2 class="subsystem-activity-heading">
+                  <i class="material-icons">code</i>
+                  Shape activity
+                </h2>
+                <p class="subsystem-activity-description">
+                  Learn how to customize the shape of small, medium, and large components, and apply them to your theme.
+                  Then learn how to customize a single component’s shape without affecting other components. 
+                </p>
+  
+              <h3 class="subsystem-activity-instruction">A. Customize your shape scheme</h3>
+              <p>
+                It's easy to change the shape of multiple components using three variables.
+                In Step A, you will use those variables to adjust the shape of small, medium, and large components.
+                You'll also create a harmonious shape system by understanding the relationship between component shapes.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Customize small components
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  To change the shape of <em>small</em> components such as buttons and text fields, update the <code>$mdc-shape-small-component-radius</code> variable.
+                  Paste the following snippet into <code>my-theme.scss</code> file to give these small components a radius of 2 pixels.
+                </p>
+                <pre><code>$mdc-shape-small-component-radius: 2px;</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Customize medium components
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                    To change the shape of <em>medium</em> components such as cards and dialogs, update the <code>$mdc-shape-medium-component-radius</code> variable.
+                    Paste the following snippet into <code>my-theme.scss</code> file to give medium components a radius of 32 pixels.
+                </p>
+                <pre><code>$mdc-shape-medium-component-radius: 32px;</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                 Customize large components
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                    To change the shape of <em>large</em> components such as navigation drawers, update the <code>$mdc-shape-large-component-radius</code> variable.
+                    Paste the following snippet into <code>my-theme.scss</code> file to give large components a radius of 140 pixels.
+                </p>
+                <pre><code>$mdc-shape-large-component-radius: 140px;</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part A Complete
+                  </h5>
+                  <p>
+                    Check out the live prototype and templates to see how your shape scheme has cascaded throughout components.
+                    Be sure to tap the menu icon in the top app bar to see how the shape of the navigation drawer has been updated.
+                    Some components may look strange, but you will be refining this in the next step.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+              
+              <h3 class="subsystem-activity-instruction">B. Refine your shape system</h3>
+              <p>
+                In Step A, you customized the shape of components using provided values. But these values were exaggerated and incorrect. Check out the templates and you'll see how these values create an incohesive shape scheme. 
+                For example, the shape of the button interferes with the shape of the card.
+                <br>
+                In Step B, you'll create a cohesive shape system using your own values.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Generate a refined shape scheme using your own values
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Update the three SCSS variables in the <code>my-theme.scss</code> file to create a cohesive shape system with your own values.
+                  Use the following code snippet as a guide.
+                </p>
+                <pre><code>$mdc-shape-small-component-radius: 8px; // Use your own value
+<!--            -->$mdc-shape-medium-component-radius: 16px; // Use your own value
+<!--            -->$mdc-shape-large-component-radius: 4px; // Use your own value</code></pre>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p> 
+                    Deciding on shape values can be challenging. It’s best to start out with simple,
+                    small shape values like 4px, 8px, 16px or 24px. Then work up to larger or more
+                    complex shapes, such as alternating radii (4px 12px) or manipulating a single 
+                    corner (4px 16px 4px 4px).
+                  </p>
+                </div>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part B Complete
+                  </h5>
+                  <p>
+                    Check out the templates to see how your shape system has cascaded throughout your components. 
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+
+              <h3 class="subsystem-activity-instruction">C. Customize a single component’s shape</h3>
+              <p>
+                In Steps A and B, you customized multiple components at once using Material Theming variables.
+                For Step C, you'll customize the shape of a single component (a button) using that component's shape mixin.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Customize the button component’s shape
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  In the <code>my-components.scss</code> file, find the selector for the <code>.mdc-button</code> class.
+                  Copy and paste the code snippet below to change the button component’s shape to 20px,
+                  overriding the radius value of your shape scheme’s <em>small</em> components.
+                </p>
+                <pre><code>.mdc-button {
+<!--            -->  @include mdc-button-shape-radius(20px);
+<!--            -->}</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part C Complete
+                  </h5>
+                  <p>
+                      Check out the Material Template to see how your shape scheme has cascaded throughout components. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+            <section class="subsystem-presets subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-presets">
+                <svg class="mdc-logo" width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-29.000000, -48.000000)">
+                      <g>
+                        <g transform="translate(0.000000, 44.000000)">
+                          <g transform="translate(29.000000, 0.000000)">
+                            <g transform="translate(0.000000, 4.000000)">
+                              <mask fill="white">
+                                <use xlink:href="#mdc-logo-path"></use>
+                              </mask>
+                              <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Material Templates + Shape
+              </h2>
+              <p class="subsystem-block-description">
+                The beauty of Material Theming is its ability to achieve vastly different visual results just by changing a few lines of code.
+                Using the templates in the navigation menu, complete the challenges below to learn advanced techniques in customizing Material Components.
+              </p>
+
+             
+              <div class="subsystem-preset">
+                <h3 class="preset-heading">Establish brand and hierarchy with shape in the login template </h3>
+           
+         
+                <div class="preset-body">   
+                  <p> <em class="preset-point">
+                    1. Create a custom shape scheme
+                    </em><br>     
+                    In the Shape Activity, you were asked to create a cohesive shape scheme using a specific combination of components. The challenge is to create a custom shape scheme for the login screen by adding custom shape values for small, medium, and large components. Remember that shape should express hierarchy and brand and begin to tell a story about your product or service. Note: Shape scheme categories can also handle multiple corner values eg. 4px 4px 4px 8px.
+                    
+                  <br>
+                    <br>
+                    <em class="preset-point">
+                    2. Customize text field's shape
+                    </em><br>     
+                    By default, the text field component uses the small component shape category. The challenge is to customize the text field to use a different shape to add emphasis. You may achieve this through expanding on your chosen shape scheme or creating contrast with an entirely different shape. Note: Text field shapes can only handle a single pixel value eg. 4px, not multiple corner values or percentages.
+                  </p>
+                  <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FScreen%20Shot%202019-06-25%20at%2011.42.33%20AM.png?v=1561488527766"/>
+                </div>  
+                  <em>my-theme.scss</em>
+                  <pre><code>$mdc-shape-small-component-radius: 4px; // Use your own value
+<!--              -->$mdc-shape-medium-component-radius: 4px; // Use your own value
+<!--              -->$mdc-shape-large-component-radius: 4px; // Use your own value</code></pre>
+                <em>Add to text field selector in my-components.scss</em>
+                  <pre><code>.mdc-text-field {
+<!--              -->@include mdc-text-field-focused-outline-color(#6200ee);
+<!--              -->@include mdc-text-field-outline-shape-radius($radius);
+<!--              -->}
+<!--              -->// Replace $radius with your own pixel value
+<!--              -->// The outline color mixin should include the color you chose from the color template challenge</code></pre>
+              </div>
+              </div>   
+        
+          </section>
+
+          </section>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Import the pre-compiled JavaScript for Material components -->
+    <script src="components.dll.js"></script>
+    <!-- Import the bundled JavaScript from app.js -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>
+
+
+<!--             <section class="subsystem-presets subsystem-page-block">
+              <div class="subsystem-block-content">
+                <h2 class="subsystem-block-heading" name="subsystem-presets">
+                  <svg class="mdc-logo" width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(-29.000000, -48.000000)">
+                        <g>
+                          <g transform="translate(0.000000, 44.000000)">
+                            <g transform="translate(29.000000, 0.000000)">
+                              <g transform="translate(0.000000, 4.000000)">
+                                <mask fill="white">
+                                  <use xlink:href="#mdc-logo-path"></use>
+                                </mask>
+                                <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  Shape theming presets
+                </h2>
+                <p class="subsystem-block-description">
+                  The beauty of Material Theming is its ability to achieve vastly different visual results just by changing a few lines of code.
+                  Try out the shapes of these presets to see how they change the look and feel of your project.
+                </p>
+
+                <div class="subsystem-preset">
+                  <h3 class="preset-heading">Rounded shapes</h3>
+                
+                  <div class="preset-body">
+                    <p>
+                      Crane is a travel app that helps users find and book travel, lodging, and restaurant options that match their input preferences.
+                      Its small components have rounded corners with a 4-pixel corner radius, but the button component overrides this value with a 50% corner radius.
+                      Its medium components have a 16-pixel corner radius, and large components have a 20-pixel corner radius.
+                      </p>
+                    <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1kOssqtF_WiheXT9LuORLGXH6sbMHYviv%2Fcasestudies-crane-main.png" />
+                  </div>
+                  <em>my-theme.scss</em>
+                  <pre><code>$mdc-shape-small-component-radius: 4px; -->
+<!--             $mdc-shape-medium-component-radius: 16px; -->
+<!--             $mdc-shape-large-component-radius: 20px;</code></pre> -->
+<!--                   <em>my-components.scss</em> -->
+<!--                   <pre><code>.mdc-button { -->
+<!--               @include mdc-button-shape-radius(50%); -->
+<!--             }</code></pre> -->
+<!--                 </div> -->
+
+<!--                 <div class="subsystem-preset">
+                  <h3 class="preset-heading">Sharp shapes</h3>
+       
+                  <div class="preset-body">
+                    <p>
+                      Fortnightly is a news app that covers a variety of topics.
+                      The app’s focus is on content, and all of its components have a corner radius of 0 pixels.
+                    </p>
+                    <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1NgGKa0YRuOJpsxvDauLqhNLr1_TnF2m2%2F01-stickersheet-logo-fortnightly.png" />
+                  </div> -->
+<!--                   <pre><code>$mdc-shape-small-component-radius: 0px; -->
+<!--             $mdc-shape-medium-component-radius: 0px; -->
+<!--             $mdc-shape-large-component-radius: 0px;</code></pre> -->
+<!--                 </div> -->
+<!--               </div> -->
+<!--             </section> -->

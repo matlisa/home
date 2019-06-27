@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material 101</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy.png?v=1560558181797">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- Add favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  </head>
+  <body class="mdc-typography language-css">
+    <aside class="mdc-drawer material-lessons-drawer">
+      <div class="mdc-drawer__content">
+        <div class="mdc-drawer__header">
+          <h1 class="mdc-drawer__title mdc-typography--headline5">
+            <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path d="M23.8461538,12 C23.8461538,5.46307692 18.5369231,0.153846154 12,0.153846154 C5.46307692,0.153846154 0.153846154,5.46307692
+                0.153846154,12 C0.153846154,18.5369231 5.46307692,23.8461538 12,23.8461538 C18.5369231,23.8461538 23.8461538,18.5369231 23.8461538,12
+                Z M4.46153846,18.0738462 C3.11538462,16.4153846 2.30769231,14.3046154 2.30769231,12 C2.30769231,9.70615385 3.12615385,7.60615385
+                4.46153846,5.93692308 L4.46153846,18.0738462 Z M18.0738462,4.46153846 L5.92615385,4.46153846 C7.58461538,3.11538462 9.69538462,2.30769231
+                12,2.30769231 C14.3046154,2.30769231 16.4153846,3.11538462 18.0738462,4.46153846 Z M12,14.7246154 L7.95076923,6.61538462 L16.06,6.61538462
+                L12,14.7246154 Z M17.3846154,8.76923077 L17.3846154,17.3846154 L13.0769231,17.3846154 L17.3846154,8.76923077 Z M10.9230769,17.3846154
+                L6.61538462,17.3846154 L6.61538462,8.76923077 L10.9230769,17.3846154 Z M18.0738462,19.5384615 C16.4046154,20.8846154 14.2938462,21.6923077
+                12,21.6923077 C9.70615385,21.6923077 7.58461538,20.8846154 5.92615385,19.5384615 L18.0738462,19.5384615 Z M21.6923077,12 C21.6923077,14.3046154
+                20.8846154,16.4153846 19.5384615,18.0738462 L19.5384615,5.93692308 C20.8738462,7.60615385 21.6923077,9.70615385 21.6923077,12 Z" id="mdc-logo-path"></path>
+              </defs>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-29.000000, -48.000000)">
+                  <g>
+                    <g transform="translate(0.000000, 44.000000)">
+                      <g transform="translate(29.000000, 0.000000)">
+                        <g transform="translate(0.000000, 4.000000)">
+                          <mask fill="white">
+                            <use xlink:href="#mdc-logo-path"></use>
+                          </mask>
+                          <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Material 101
+            <div class="android-chip mdc-chip mdc-chip-set--choice">
+      <div class="mdc-chip__text">WEB</div>
+    </div>
+          </h1>
+          <h2 class="theme-name mdc-typography--headline5" placeholder="Theme name..."></h2>
+        </div>
+        <hr class="mdc-list-divider">
+
+        <nav class="mdc-list">
+          <a href="/" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">favorite</i>
+            <span class="mdc-list-item__text">Building with Material</span>
+          </a>
+          <hr class="mdc-list-divider">
+
+           <h3 class="mdc-list-group__subheader">Activities</h3> 
+          <a href="color.html" class="mdc-list-item mdc-list-item--selected" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+            <span class="mdc-list-item__text">Color</span>
+          </a>
+          <a href="typography.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+            <span class="mdc-list-item__text">Typography</span>
+          </a>
+          <a href="shape.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+            <span class="mdc-list-item__text">Shape</span>
+          </a>
+          <a href="layout.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic">view_column</i>
+            <span class="mdc-list-item__text">Layout</span>
+          </a>
+
+          <hr class="mdc-list-divider">
+
+          <h3 class="mdc-list-group__subheader">Resources</h3>
+          <a href="portfolio-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Design Portfolio Template</span>
+          </a>
+          <a href="login-template.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Login Screen Template</span>
+          </a>
+          <a href="media-article.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+            <span class="mdc-list-item__text">Article Template</span>
+          </a>
+          <a href="components-sheet.html" class="mdc-list-item" role="option">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">category</i>
+            <span class="mdc-list-item__text">Components</span>
+          </a>
+          <div class= "nav-footer">
+            <hr class="mdc-list-divider">
+             <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="https://material-101-android.glitch.me/" target="_blank">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+              <span class="mdc-button__label">MATERIAL 101 FOR ANDROID</span>
+            </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="material-lessons-top-app-bar mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-collapsed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+        <!-- Color Scheme -->
+        <section class="color-page subsystem-page">
+          <section class="subsystem-overview subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-overview">
+                <i class="material-icons">invert_colors</i>
+                Color
+              </h2>
+              <ul class="subsystem-block-description">
+                <li>Material Design's color system uses tonal palettes.</li>
+                <li>Color choices need to account for contrast, context, and meaning.</li>
+                <li>Achieving proper contrast may require changing the On Surface color.</li>
+              </ul>
+              <figure class="color-figure">
+                <div class="color-square color-square--primary">
+                  <div class="color-square-desc--bg">
+                    <span>Primary</span>
+                    <span class="color-hex"></span>
+                  </div>
+                  <div class="color-square-desc--text">
+                    <span>On Primary</span>
+                    <span class="color-hex"></span>
+                  </div>
+                </div>
+                <div class="color-square color-square--secondary">
+                  <div class="color-square-desc--bg">
+                    <span>Secondary</span>
+                    <span class="color-hex"></span>
+                  </div>
+                  <div class="color-square-desc--text">
+                    <span>On Secondary</span>
+                    <span class="color-hex"></span>
+                  </div>
+                </div>
+                <div class="color-square color-square--surface mdc-elevation--z2">
+                  <div class="color-square-desc--bg">
+                    <span>Surface</span>
+                    <span class="color-hex"></span>
+                  </div>
+                  <div class="color-square-desc--text">
+                    <span>On Surface</span>
+                    <span class="color-hex"></span>
+                  </div>
+                </div>
+                <div class="color-square color-square--background">
+                  <div class="color-square-desc--bg">
+                    <span>Background</span>
+                    <span class="color-hex"></span>
+                  </div>
+                </div>
+                <div class="color-square color-square--error">
+                  <div class="color-square-desc--bg">
+                    <span>Error</span>
+                    <span class="color-hex"></span>
+                  </div>
+                  <div class="color-square-desc--text">
+                    <span>On Error</span>
+                    <span class="color-hex"></span>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </section>
+
+          <section class="subsystem-live-proto">
+            <aside class="mdc-drawer live-proto-material-lessons-drawer mdc-drawer--modal">
+              <div class="mdc-drawer__content">
+                 <nav class="mdc-list">
+                  <a href="index.html" class="mdc-list-item" aria-selected="true" role="option" tabindex="0">
+                    <i class="material-icons mdc-list-item__graphic">favorite</i>
+                    <span class="mdc-list-item__text">About</span>
+                  </a>
+                  <a href="layout.html" class="mdc-list-item">
+                    <i class="material-icons mdc-list-item__graphic">view_column</i>
+                    <span class="mdc-list-item__text">Layout</span>
+                  </a>
+                  <a href="color.html" class="mdc-list-item  mdc-list-item--selected" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">invert_colors</i>
+                    <span class="mdc-list-item__text">Color</span>
+                  </a>
+                  <a href="typography.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">text_fields</i>
+                    <span class="mdc-list-item__text">Typography</span>
+                  </a>
+                  <a href="shape.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">border_style</i>
+                    <span class="mdc-list-item__text">Shape</span>
+                  </a>
+                   <a href="portfolio-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Design Portfolio Template</span>
+                  </a>
+                  <a href="login-template.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Login Template</span>
+                  </a>
+                  <a href="media-article.html" class="mdc-list-item" role="option">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+                    <span class="mdc-list-item__text">Article Template</span>
+                  </a>
+                </nav>
+              </div>
+            </aside>
+            <div class="mdc-drawer-scrim"></div>
+
+
+            <header class="mdc-top-app-bar live-proto-top-app-bar">
+              <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                  <span class="mdc-top-app-bar__title">Color</span>
+                </section>
+              </div>
+            </header>
+
+            <section class="live-proto-main color-live-proto-main">
+              <div class="mdc-card demo-card">
+                <div class="mdc-card__primary-action" tabindex="0">
+                  <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-amsterdam-nieuwmarkt-en-lastage-by-katerina-145690655.jpg?1559083734977&quot;);"></div>
+                  <div class="demo-card__primary">
+                      <h3 class="demo-card__subtitle mdc-typography mdc-typography--overline">Overline</h3>
+                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Headline 6</h2>
+                  </div>
+                  <div class="demo-card__secondary mdc-typography mdc-typography--body2">This paragraph is using the Body 2 style. However, this was anything but a regular bee: in fact it was an elephant.</div>
+                </div>
+                <div class="mdc-card__actions">
+                  <div class="mdc-card__action-buttons">
+                    <button class="mdc-button mdc-card__action mdc-card__action--button">Button</button>
+                    <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Button</button>
+                  </div>
+                </div>
+              </div>
+              <button class="mdc-fab" aria-label="Favorite">
+                <span class="mdc-fab__icon material-icons">favorite</span>
+              </button>
+            </section>
+          </section>
+          
+          <section class="subsystem-activity subsystem-page-block ">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-activity-heading">
+                <i class="material-icons">code</i>
+                Color activity
+              </h2>
+              <p class="subsystem-activity-description">
+                Learn how to build a cohesive color palette using Material Theming and industry
+                standard contrast ratios to ensure your designs are accessible and usable for a broad range of users.
+              </p>
+
+              <h3 class="subsystem-activity-instruction">A. Choose a primary and secondary color</h3>
+              <p>
+                In Part A, you will use tools on Material.io to build a color palette mapping to Material's Primary
+                and Secondary colors. Then you'll apply them to your project.
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Use this tonal palette generator to choose a 500 Primary <div class="indent">and 500 Secondary color</div>
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Play around with the palette generator.
+                  It returns nine tones of a color to choose from, but for the
+                  purposes of this activity, you should use a 500-level for both your
+                  Primary and Secondary colors. 
+                </p>
+                <div class="button-wrapper">
+                  <a class="mdc-button mdc-button--outlined" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors" target="_blank">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                    <span class="mdc-button__label">Material palette generator</span>
+                  </a>
+                </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Add the primary and secondary color hex codes to your theme <div class="indent">file</div>
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Using the palettes from Step 1, click on the 500-level tone of each color to copy its hex value.
+                  Then, paste the hex values into their respective variable in the <code>my-theme.scss</code> file.
+                  Use the code snippet below as a guide. 
+                </p>
+                <pre><code>$mdc-theme-primary: #6200ee; // Use your own value
+<!--            -->$mdc-theme-secondary: #018786; // Use your own value </code></pre>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p>
+                    When editing colors in CSS, make sure you include a single hash symbol (#) in the beginning of your hex color values.
+                  </p>
+                </div>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part A Complete
+                  </h5>
+                  <p>
+                    Check out the templates to see see how your primary color is applied across various components.
+                    Double check that text and icons are readable against the container color in all components.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+              
+              <h3 class="subsystem-activity-instruction">B. Customize surface and on-surface colors</h3>
+              <p>
+                In Part B, you will be manipulating the color of <em>surfaces</em>, such as cards, menus and navigation bars, as well as the <em>on-surface</em> text color of these components.
+                You'll be using Material's grey tonal palette, provided below.
+              </p>
+              <figure class="grey-tonal-palette">
+                <div class="grey-tone grey-50">
+                  <span>Grey 50</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-100">
+                  <span>Grey 100</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-200">
+                  <span>Grey 200</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-300">
+                  <span>Grey 300</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-400">
+                  <span>Grey 400</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-500">
+                  <span>Grey 500</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-600">
+                  <span>Grey 600</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-700">
+                  <span>Grey 700</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-800">
+                  <span>Grey 800</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-900">
+                  <span>Grey 900</span>
+                  <span class="color-hex"></span>
+                </div>
+              </figure>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Change your <em>surface</em> color from white to Grey 300
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Change your <em>surface</em> color from white to Grey 300 (a light grey) by copying its hex value.
+                  In your <code>my-theme.scss</code> file, find the <code>$mdc-theme-surface</code> variable and replace the color hex value with the one you copied.
+                  You can also copy and paste the following code snippet.
+                </p>
+                <pre><code>$mdc-theme-surface: #e0e0e0;</code></pre>
+                <div class="callout-block design-tip">
+                  <h5 class="callout-block-heading">★ Design Tip</h5>
+                  <p>Check your templates and mobile view to see how the surface color is applied to different components.</p>
+                </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Change your <em>on-surface</em> color from black to Grey 500
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Use the following hex value to change your <em>on-surface</em> color from black to Grey 500 (a medium grey).
+                  Paste the following code snippet into your <code>my-theme.scss</code> file.
+                </p>
+                <pre><code>$mdc-theme-on-surface: #9e9e9e;</code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part B Complete
+                  </h5>
+                  <p>
+                    Check your templates to see how the <em>surface</em> and <em>on-surface</em> colors are applied to different components.
+                    These colors, when used together, have especially low contrast but we'll fix that in the next step.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+
+              <h3 class="subsystem-activity-instruction">C. Test the contrast of <em>surface</em> and <em>on-surface</em> colors</h3>
+              <p>
+                In Part C, you will use a WCAG-based color contrast checker to find the contrast ratio of your <em>surface</em>
+                and <em>on-surface</em> colors and ensure they meet industry standards for accessibility. 
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Visit the Contrast Ratio website
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  In the Contrast Ratio website, you will find 2 different text fields, one for Background and another for Text Color.
+                </p>
+                <div class="button-wrapper">
+                  <a class="mdc-button mdc-button--outlined" href="https://contrast-ratio.com/" target="_blank">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                    <span class="mdc-button__label">Contrast Ratio</span>
+                  </a>
+                </div>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Paste your <em>surface</em> color into the Background field
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Copy the <em>surface</em> color (Grey 300) from Part B, and paste it in the 'Background' field.
+                  Remember to include the hash (#) symbol.
+                </p>
+                <pre><code>#e0e0e0</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Paste in your <em>on-surface</em> color into the Text Color field
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Copy the <em>on-surface</em> color (Grey 500) from Part B, and paste it in the 'Text Color' field.
+                  Remember to include the hash (#) symbol.
+                </p>
+                <pre><code>#9e9e9e</code></pre>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">4</div>
+                Review the resulting contrast
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Once you have entered both Background and Text Color values you will see a contrast ratio number indicated
+                  between the two fields. This number should be 2.02. 
+                  <br><br>
+                  The contrast between these two colors fails WCAG AA contrast ratio standards, meaning that the text may be unreadable at small sizes for most users.
+                  In order to pass WCAG AA standards, that number must be equal to or greater than 4.5.
+                  <br><br>
+                  We will refine your surface colors in the next step. 
+                </p>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part C Complete
+                  </h5>
+                  <p>
+                    Check your templates and mobile view to see the effects of low-contrast components and
+                    text on a user interface. We will refine your colors in the next part of the activity.
+                  </p>
+                </div>
+              </div>
+              <hr class="mdc-list-divider">
+
+              <h3 class="subsystem-activity-instruction">D. Refine your <em>surface</em> and <em>on-surface</em> colors to increase contrast</h3>
+              <p>
+                In Part C, we prescribed low-contrast colors to illustrate the importance of contrast ratios and how
+                they can enhance or detract from your design.
+                In Part D, you will refine your <em>surface</em> and <em>on-surface</em> colors to meet contrast requirements. 
+              </p>
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">1</div>
+                Choose a lighter surface color and darker on-surface color
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Using Material's Grey tonal palette, choose a lighter grey for a <em>surface</em> color, for example, Grey 200.
+                  Also choose a darker grey to use as an <em>on-surface</em> color, for example, Grey 800.
+                </p>
+              </div>
+              <figure class="grey-tonal-palette">
+                <div class="grey-tone grey-50">
+                  <span>Grey 50</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-100">
+                  <span>Grey 100</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-200">
+                  <span>Grey 200</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-300">
+                  <span>Grey 300</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-400">
+                  <span>Grey 400</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-500">
+                  <span>Grey 500</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-600">
+                  <span>Grey 600</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-700">
+                  <span>Grey 700</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-800">
+                  <span>Grey 800</span>
+                  <span class="color-hex"></span>
+                </div>
+                <div class="grey-tone grey-900">
+                  <span>Grey 900</span>
+                  <span class="color-hex"></span>
+                </div>
+              </figure>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">2</div>
+                Review the contrast of your surface and on-surface colors
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Use the Contrast Ratio website to check the contrast of your new colors.
+                  Enter your <em>surface</em> color in the 'Background' field and enter your <em>on-surface</em> color in the 'Text Color' field.
+                </p>
+                <div class="button-wrapper">
+                  <a class="mdc-button mdc-button--outlined" href="https://contrast-ratio.com/" target="_blank">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                    <span class="mdc-button__label">Contrast Ratio</span>
+                  </a>
+                </div>
+                <p>Repeat steps 1 and 2 until your colors pass contrast ratio requirements, i.e. until you see a contrast ratio number of 4.5 or greater.</p>
+              </div>
+
+              <h4 class="subsystem-activity-subinstruction">
+                <div class="number">3</div>
+                Add your new colors to your SCSS file
+              </h4>
+              <div class="subsystem-activity-task">
+                <p>
+                  Replace your <em>surface</em> and <em>on-surface</em> SCSS variables with your new colors by copying and pasting the hex values. 
+                  Use the code snippet below as a guide.
+                </p>
+                <pre><code>$mdc-theme-surface: #eeeeee; // Use your own value
+<!--          -->$mdc-theme-on-surface: #424242; // Use your own value </code></pre>
+                <div class="callout-block part-completion">
+                  <h5 class="callout-block-heading">
+                    <i class="material-icons">check</i>
+                    Part D Complete
+                  </h5>
+                  <p>
+                    Check your templates to see how your surface colors have affected your components, and how they work together.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="subsystem-presets subsystem-page-block">
+            <div class="subsystem-block-content">
+              <h2 class="subsystem-block-heading" name="subsystem-presets">
+                <svg class="mdc-logo" width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-29.000000, -48.000000)">
+                      <g>
+                        <g transform="translate(0.000000, 44.000000)">
+                          <g transform="translate(29.000000, 0.000000)">
+                            <g transform="translate(0.000000, 4.000000)">
+                              <mask fill="white">
+                                <use xlink:href="#mdc-logo-path"></use>
+                              </mask>
+                              <use fill="#5F6367" fill-rule="nonzero" xlink:href="#mdc-logo-path"></use>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Material Templates + Color
+              </h2>
+              <p class="subsystem-block-description">
+                The beauty of Material Theming is its ability to achieve vastly different visual results just by changing a few lines of code.
+                Using the templates in the navigation menu, complete the challenges below to learn advanced techniques in customizing Material Components.
+              </p>
+
+             
+              <div class="subsystem-preset">
+                <h3 class="preset-heading">Express brand with color using the login screen template</h3>
+           
+         
+                <div class="preset-body">   
+                  <p> <em class="preset-point">
+                    1. Add custom brand colors
+                    </em><br>     
+                    In the Color Activity, you were given specific color values. The challenge is to add custom colors to your theme that express brand and meet contrast requirements. Use the code below as a guide.
+                  <br>
+                    <br>
+                    <em class="preset-point">
+                    2. Customize the text field's focus color
+                    </em><br>     
+                    By default the active state of the text field component uses a theme's primary color. The challenge is to use a different color than your primary or secondary color. Remember, the color should still meet contrast requirements.
+                  </p>
+                  <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2FArtboard%20Copy%203.png?v=1561051898357" />
+                </div>  
+                  <em>my-theme.scss</em>
+                  <pre><code>$mdc-theme-primary: #6200ee; // 1. Replace with custom brand colors 
+<!--              -->$mdc-theme-secondary: #018786; // 1. Replace with custom brand colors </code></pre>
+                <em>my-components.scss</em>
+                  <pre><code>.mdc-text-field {
+<!--              -->@include mdc-text-field-focused-outline-color($color);
+<!--              -->}
+<!--              -->// 2. Replace $color with a new focus color
+<!--              --></code></pre>
+              </div>
+              
+              
+              
+              
+ <!-- This is a comment            
+              <div class="subsystem-preset">
+                <h3 class="preset-heading">Punchy colors</h3>
+           
+                <div class="preset-body">
+                  <p>
+                    Reply is an email app that helps individuals and groups communicate.
+                    Its color theme uses a dark blue-gray primary color and an orange secondary color.
+                    This pairing allows content to be easily read without distraction.
+                    Whenever Reply’s secondary color is used, it has a pronounced impact.
+                  </p>
+                  <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D%2Fcasestudies-reply-main.png" />
+                </div>
+                <pre><code>$mdc-theme-primary: #344955;
+$mdc-theme-secondary: #F9AA33;</code></pre>
+              </div>
+
+              <div class="subsystem-preset">
+                <h3 class="preset-heading">Friendly colors</h3>
+                <div class="preset-body">
+                  <p>
+                    Basil is a recipe app allowing users to browse recipes curated by a group of chefs and bartenders.
+                    It uses a color theme inspired by the deep and rich colors of fruits and vegetables. Its primary color is olive green and its secondary color is orange.
+                  </p>
+                  <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F12WcnQceK_XdiYVO_0IOeeKzGpwelBSZT%2Fcasestudies-basil-main.png" />
+                </div>
+                <pre><code>$mdc-theme-primary: #356859;
+$mdc-theme-secondary: #FD5523;</code></pre> <!--            -->
+              </div>   
+        
+          </section>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Import the pre-compiled JavaScript for Material components -->
+    <script src="components.dll.js"></script>
+    <!-- Import the bundled JavaScript from app.js -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>

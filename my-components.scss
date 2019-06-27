@@ -1,0 +1,18 @@
+// For Layout activity
+
+.mdc-image-list {
+  // Include mixins for image list here
+  @include mdc-image-list-standard-columns(1);
+}
+
+// For Shape activity
+
+.mdc-button {
+  // Include mixins for button here
+  // @include mdc-button-shape-radius(20px);
+}
+
+
+
+
+
